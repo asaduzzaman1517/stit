@@ -1,0 +1,64 @@
+//Menu Style
+.kdv_menu {
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 0.3s ease;
+    @include lg-screen {
+        position: inherit;
+        width: 100%;
+        height: inherit;
+    }
+    &.active {
+        left: 0;
+        width: 100%;
+        z-index: 99;
+    }
+    &-bar {
+        @include lg-screen {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__is {
+        text-align: center;
+        @include lg-screen {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__content {
+        min-width: 250px;
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $dark;
+        @include lg-screen {
+            width: 100%;
+            min-width: 100%;
+            flex-direction: row;
+            justify-content: flex-end;
+            background: transparent;
+        }
+    }
+    &__close {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: rgba($black, 0.5);
+        @include lg-screen {
+            display: none;
+        }
+    }
+}

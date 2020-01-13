@@ -1,0 +1,13 @@
+//Text Color
+.t-sub-text {
+    color: $subheading-text;
+}
+.t-link-text {
+    color: $grad-six;
+    &:hover {
+        color: darken($grad-six, 3%);
+    }
+}
+.t-text-light {
+    color: $white;
+}

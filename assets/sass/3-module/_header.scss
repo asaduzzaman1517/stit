@@ -1,0 +1,22 @@
+// Header Style
+.kdv_header {
+    min-height: 812px;
+    height: 100vh;
+    width: 100%;
+    &__bg {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-image: url(../img/bg_overlay.svg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__bottom {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

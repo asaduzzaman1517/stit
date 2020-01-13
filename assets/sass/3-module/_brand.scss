@@ -1,0 +1,75 @@
+//Brand Style
+.kdv_brand {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include lg-screen {
+        width: 50%;
+    }
+    &__link {
+        display: inline-block;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__icon {
+        width: 30px;
+        height: 4px;
+        display: inline-block;
+        position: relative;
+        background: $white;
+
+        &::after {
+            content: "";
+            width: 30px;
+            height: 4px;
+            position: absolute;
+            top: 7px;
+            background: $white;
+            transition: all 0.2s ease;
+        }
+        &::before {
+            content: "";
+            width: 30px;
+            height: 4px;
+            position: absolute;
+            bottom: 7px;
+            background: $white;
+            transition: all 0.2s ease;
+        }
+        &-box {
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            z-index: 99;
+            @include lg-screen {
+                display: none;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            &.active {
+                .kdv_brand__icon {
+                    background: transparent;
+                    &::after {
+                        top: 0;
+                        transform: rotate(45deg);
+                    }
+                    &::before {
+                        bottom: 0;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+    &--sm {
+        width: 48px;
+        text-align: center;
+        @include lg-screen {
+            display: none;
+        }
+    }
+}
