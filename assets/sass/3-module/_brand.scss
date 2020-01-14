@@ -1,5 +1,5 @@
 //Brand Style
-.kdv_brand {
+.sdy_brand {
     height: 48px;
     width: 100%;
     display: flex;
@@ -51,7 +51,7 @@
                 cursor: pointer;
             }
             &.active {
-                .kdv_brand__icon {
+                .sdy_brand__icon {
                     background: transparent;
                     &::after {
                         top: 0;

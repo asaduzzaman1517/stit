@@ -1,76 +1,150 @@
 //Nav Style
-.kdv_nav {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    &--primary {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @include lg-screen {
-            flex-direction: row;
-            margin-bottom: 0 !important;
-        }
-        li {
-            margin-bottom: 5px;
-            @include lg-screen {
-                margin-bottom: 0;
-                margin-right: 50px;
-            }
-            &:last-child {
-                margin-bottom: 0;
-            }
-            a {
-                padding-top: 5px;
-                padding-bottom: 5px;
-                display: inline-block;
-                color: $white;
-                font-family: $heading-font;
-                text-transform: capitalize;
-                transition: all 0.3s ease;
-                @include md-screen {
-                    font-size: 34px;
-                    font-style: italic;
-                }
-                @include lg-screen {
-                    font-family: $body-font;
-                    font-size: 17px;
-                    font-weight: 400;
-                    font-style: normal;
-                }
-                &:hover {
-                    text-decoration: none;
-                    background: -webkit-linear-gradient(
-                        120deg,
-                        $grad-three,
-                        $grad-four
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-            &.current-menu-item {
-                a {
-                    background: -webkit-linear-gradient(
-                        120deg,
-                        $grad-three,
-                        $grad-four
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-        }
-    }
-    &--rating {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        &__item {
-            margin-right: 5px;
-            &:last-child {
-                margin-right: 10px;
-            }
-        }
-    }
+.sdy_nav {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	&--primary {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include lg-screen {
+			flex-direction: row;
+			margin-bottom: 0 !important;
+		}
+		li {
+			margin-bottom: 5px;
+			@include lg-screen {
+				margin-bottom: 0;
+				margin-right: 50px;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				padding-top: 5px;
+				padding-bottom: 5px;
+				display: inline-block;
+				color: $white;
+				font-family: $heading-font;
+				text-transform: capitalize;
+				transition: all 0.3s ease;
+				@include md-screen {
+					font-size: 24px;
+					font-style: italic;
+				}
+				@include lg-screen {
+					font-family: $body-font;
+					font-size: 17px;
+					font-weight: 700;
+					font-style: normal;
+				}
+				&:hover {
+					text-decoration: none;
+					background: -webkit-linear-gradient(
+						120deg,
+						$grad-three,
+						$grad-four
+					);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}
+			&.current-menu-item {
+				a {
+					background: -webkit-linear-gradient(
+						120deg,
+						$grad-three,
+						$grad-four
+					);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}
+		}
+	}
+}
+.menu-item-has-children {
+	position: relative;
+	.sub-menu {
+		width: 0;
+		height: 0;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		top: -150%;
+		left: 50%;
+		transform: translateX(-50%);
+		background: darken($dark, 5%);
+		opacity: 0;
+		visibility: hidden;
+		z-index: 0;
+		transition: all 0.3s ease;
+		@include md-screen {
+			width: 250px;
+		}
+		@include lg-screen {
+			position: absolute;
+		}
+		li {
+			margin-bottom: 0;
+			width: 100%;
+			visibility: hidden;
+			transition: all 0.3s ease;
+			a {
+				width: 100%;
+				display: inline-block;
+				color: $white;
+				background: inherit;
+				-webkit-text-fill-color: inherit;
+				transition: all 0.3s ease;
+				&:hover {
+					background: darken($dark, 10%);
+				}
+			}
+			&:first-child {
+				padding-top: 20px;
+			}
+			&:last-child {
+				padding-bottom: 20px;
+			}
+		}
+	}
+	&:hover {
+		> .sub-menu {
+			width: 200px;
+			height: auto;
+			visibility: visible;
+			opacity: 1;
+			z-index: 1;
+			top: 100%;
+			transform: translateX(-50%);
+			@include lg-screen {
+				width: 200px;
+			}
+			li {
+				visibility: visible;
+			}
+		}
+	}
+	li:hover > .sub-menu {
+		height: auto;
+		visibility: visible;
+		opacity: 1;
+		z-index: 1;
+	}
+	&::after {
+		content: "\f107";
+		position: absolute;
+		top: 50%;
+		right: -16px;
+		transform: translateY(-50%);
+		font-family: "FontAwesome";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1;
+		background: -webkit-linear-gradient(120deg, $grad-three, $grad-four);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 }
