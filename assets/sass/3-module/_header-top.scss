@@ -1,0 +1,42 @@
+//Header top
+.st-header-top {
+    background: $bg-one;
+    &__info {
+        
+        &-icon {
+            display: inline-block;
+            background: $secondary;
+            color: $bg-one;
+            span {
+                line-height: 1.5;
+            }
+        }
+    }
+    &__slider {
+        position: relative;
+        &-item {
+            color: $white;
+        }
+        //Slider Customization
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $white;
+            &-prev {
+                right: 10px;
+                z-index: 9999;
+                @include xl-screen {
+                    right: 45px;
+                }
+            }
+            &-next {
+                right: -5px;
+                @include xl-screen {
+                    right: 25px;
+                }
+            }
+        }
+    }
+}
+

@@ -14,38 +14,26 @@
 			}
 		);
 		// Toogle class on navbar
-		$(".sdy_brand__icon-box").on("click", function() {
+		$(".st_brand__icon-box").on("click", function() {
 			$(this).toggleClass("active");
-			$(".sdy_menu").toggleClass("active");
+			$(".st_menu").toggleClass("active");
 		});
-		$(".sdy_menu__close").on("click", function() {
-			$(".sdy_menu").toggleClass("active");
-			$(".sdy_brand__icon-box").toggleClass("active");
+		$(".st_menu__close").on("click", function() {
+			$(".st_menu").toggleClass("active");
+			$(".st_brand__icon-box").toggleClass("active");
 		});
 
-		//Hero Slider
-		var heroSlider = $(".sdy_hero__slider");
-		if (heroSlider.length) {
-			heroSlider.slick({
+		//Header Top slider
+		var headerTop = $('.st-header-top__slider');
+		if(headerTop.length) {
+			headerTop.slick({
 				slidesToShow: 1,
 				mobileFirst: true,
-				fade: true,
-				cssEase: "linear",
-				arrows: false,
 				autoplay: true,
+				fade: true,
 				autoplaySpeed: 8000,
-				speed: 800,
-				responsive: [
-					{
-						breakpoint: 767,
-						settings: {
-							slidesToShow: 3,
-							fade: false,
-							centerMode: true,
-							centerPadding: "0"
-						}
-					}
-				]
+				prevArrow: '<i class="fas fa-angle-left slick-arrow-prev"></i>',
+				nextArrow: '<i class="fas fa-angle-right slick-arrow-next"></i>'
 			});
 		}
 	});

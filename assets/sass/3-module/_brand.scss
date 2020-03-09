@@ -1,5 +1,5 @@
 //Brand Style
-.sdy_brand {
+.st_brand {
     height: 48px;
     width: 100%;
     display: flex;
@@ -51,7 +51,7 @@
                 cursor: pointer;
             }
             &.active {
-                .sdy_brand__icon {
+                .st_brand__icon {
                     background: transparent;
                     &::after {
                         top: 0;

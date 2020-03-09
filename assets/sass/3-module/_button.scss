@@ -1,0 +1,40 @@
+//Button
+.st-btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    &--primary {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 22px;
+        padding-right: 22px;
+        background: $secondary;
+    }
+    &-link {
+        display: inline-block;
+        transition: all .3s ease;
+        font-weight: 500;
+        &:hover {
+            text-decoration: none;
+        }
+        &--primary {
+            text-transform: capitalize;
+            color: $white;
+            &:hover {
+                color: $bg-one;
+            }
+        }
+        &--secondary {
+            text-transform: capitalize;
+            color: $white;
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+    &-icon {
+        margin-left: 5px;
+    }
+    &-rounded {
+        border-radius: 50px;
+    }
+}

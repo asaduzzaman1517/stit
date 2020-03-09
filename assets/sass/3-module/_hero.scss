@@ -1,21 +1,13 @@
 //Hero
-.sdy_hero {
-    padding-top: 70px;
-    @include md-screen {
-        padding-top: 160px;
-    }
-    @include lg-screen {
-        padding-top: 100px;
-    }
-    @include xl-screen {
-        padding-top: 130px;
-    }
-    &__title {
-        margin-bottom: 15px;
+.st_hero {
+    &-title {
         color: $white;
     }
-    &__subtitle {
+    &-subtitle {
         display: block;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
         color: $white;
     }
 }

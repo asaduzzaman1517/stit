@@ -1,0 +1,15 @@
+//About 
+.st-about {
+    &__img {
+        position: relative;
+        &::after {
+            width: 100px;
+            height: 150px;
+            content: url(../img/about-after.png);
+            position: absolute;
+            left: -30px;
+            bottom: -30px;
+            z-index: -1;
+        }
+    }
+}

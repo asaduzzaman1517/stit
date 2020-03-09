@@ -1,0 +1,25 @@
+//Section Title
+.st-section-title {
+    margin-top: 15px;
+    text-transform: capitalize;
+    &-pre {
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $secondary;
+        &::before {
+            content: '';
+            width: 40px;
+            height: 2px;
+            position: absolute;
+            bottom: 2px;
+            left: -40px;
+            background: $bg-one;
+        }
+    }
+    &-sub {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

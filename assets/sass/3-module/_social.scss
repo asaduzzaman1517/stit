@@ -1,0 +1,29 @@
+//Social Link
+.st-social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    &__item {
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        display: inline-block;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__icon {
+        color: $white;
+        font-size: 16px;
+        transition: all .3s ease;
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
