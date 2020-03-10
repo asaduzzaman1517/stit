@@ -1,0 +1,17 @@
+//workshop date
+.st-event-date {
+    text-align: center;
+    &__day {
+        display: block;
+        font-family: $heading-font;
+        font-size: 36px;
+        color: $heading-text;
+        line-height: 1.15;
+    }
+    &__month {
+        font-size: 18px;
+        font-weight: 500;
+        color: $heading-text;
+        text-transform: capitalize;
+    }
+}

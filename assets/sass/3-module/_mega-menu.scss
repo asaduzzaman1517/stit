@@ -1,0 +1,36 @@
+//Mega Menu
+.st-mega-menu {
+    padding: 40px;
+    &__title {
+        display: block;
+        text-align: left;
+        position: relative;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+        &::after {
+            content: "";
+            width: 33px;
+            height: 2px;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            background: $border;
+        }
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        &-item {
+            border-bottom: 1px solid rgba($black, .05);
+            &:last-child {
+                border-bottom: transparent;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        padding: 10px;
+    }
+}

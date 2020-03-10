@@ -1,0 +1,27 @@
+.st-event-author {
+    display: flex;
+    // flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &__img {
+        width: 75px;
+        min-width: 75px;
+        height: 75px;
+        margin-right: 16px;
+    }
+    &__info {
+        color: $heading-text;
+    }
+    &__name {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    &__designation {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+}

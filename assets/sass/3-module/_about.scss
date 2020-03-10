@@ -1,5 +1,14 @@
 //About 
 .st-about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &-bg {
+        padding-top: 120px;
+        background-image: url(../img/about-shape.png);
+        background-size: initial;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
     &__img {
         position: relative;
         &::after {

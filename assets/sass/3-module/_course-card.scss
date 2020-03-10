@@ -1,0 +1,156 @@
+//Course Card
+.st-course-card {
+    padding: 40px 30px;
+    border-radius: 5px;
+    position: relative;
+    transition: all .3s ease;
+    &:hover {
+        box-shadow: 10px 10px 20px 0 rgba($black, 0.05);
+    }
+    &--1 {
+        background-color: $custom-1;
+
+        &::before {
+            content: "01";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 48px;
+            font-family: $heading-font;
+            -webkit-text-stroke: 1px darken($custom-1, 25%);
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &--2 {
+        background-color: $custom-4;
+        &::before {
+            content: "02";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 48px;
+            font-family: $heading-font;
+            -webkit-text-stroke: 1px darken($custom-4, 25%);
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &--3 {
+        background-color: $custom-7;
+        &::before {
+            content: "03";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 48px;
+            font-family: $heading-font;
+            -webkit-text-stroke: 1px darken($custom-7, 25%);
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &--4 {
+        background-color: $custom-10;
+        &::before {
+            content: "04";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 48px;
+            font-family: $heading-font;
+            -webkit-text-stroke: 1px darken($custom-10, 25%);
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &--5 {
+        background-color: $custom-13;
+        &::before {
+            content: "05";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 48px;
+            font-family: $heading-font;
+            -webkit-text-stroke: 1px darken($custom-13, 25%);
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &--6 {
+        background-color: $custom-16;
+        &::before {
+            content: "06";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 48px;
+            font-family: $heading-font;
+            -webkit-text-stroke: 1px darken($custom-16, 25%);
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &--7 {
+        background-color: $custom-19;
+        &::before {
+            content: "07";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 48px;
+            font-family: $heading-font;
+            -webkit-text-stroke: 1px darken($custom-19, 25%);
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &--8 {
+        background-color: $custom-22;
+        &::before {
+            content: "08";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            font-size: 48px;
+            font-family: $heading-font;
+            -webkit-text-stroke: 1px darken($custom-22, 25%);
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px 0 rgba($black, 0.1);
+        color: $white;
+        font-size: 36px;
+        &--1 {
+            background-image: linear-gradient(-39deg, $custom-3, $custom-2);
+        }
+        &--2 {
+            background-image: linear-gradient(-39deg, $custom-6, $custom-5);
+        }
+        &--3 {
+            background-image: linear-gradient(-39deg, $custom-9, $custom-8);
+        }
+        &--4 {
+            background-image: linear-gradient(-39deg, $custom-11, $custom-12);
+        }
+        &--5 {
+            background-image: linear-gradient(-39deg, $custom-15, $custom-14);
+        }
+        &--6 {
+            background-image: linear-gradient(-39deg, $custom-18, $custom-17);
+        }
+        &--7 {
+            background-image: linear-gradient(-39deg, $custom-21, $custom-20);
+        }
+        &--8 {
+            background-image: linear-gradient(-39deg, $custom-24, $custom-23);
+        }
+    }
+    &__title {
+        display: block;
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+}

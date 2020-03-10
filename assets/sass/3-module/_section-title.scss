@@ -17,6 +17,17 @@
             left: -40px;
             background: $bg-one;
         }
+        &--alt {
+            &::after {
+                content: '';
+                width: 40px;
+                height: 2px;
+                position: absolute;
+                bottom: 2px;
+                right: -40px;
+                background: $bg-one;
+            }
+        }
     }
     &-sub {
         font-size: 18px;

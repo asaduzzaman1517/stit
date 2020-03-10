@@ -43,7 +43,7 @@
             height: 30px;
             width: 30px;
             display: inline-block;
-            z-index: 99;
+            z-index: 10000;
             @include lg-screen {
                 display: none;
             }

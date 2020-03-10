@@ -1,0 +1,40 @@
+.st-saas-menu {
+    display: flex;
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 36px;
+        color: $white;
+        &-1 {
+            background-image: linear-gradient(-39deg, $custom-3, $custom-2);
+        }
+        &-2 {
+            background-image: linear-gradient(-39deg, $custom-6, $custom-5);
+        }
+        &-3 {
+            background-image: linear-gradient(-39deg, $custom-8, $custom-9);
+        }
+        &-4 {
+            background-image: linear-gradient(-39deg, $custom-24, $custom-23);
+        }
+    }
+    &__product {
+        text-align: left;
+        &-name {
+            display: block;
+            font-weight: 500;
+            color: $heading-text;
+            text-transform: capitalize;
+        }
+        &-des {
+            display: block;
+            font-size: 12px;
+            font-weight: normal;
+            color: $heading-text;
+            text-transform: capitalize;
+        }
+    }
+}
