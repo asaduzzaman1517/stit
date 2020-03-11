@@ -1,6 +1,39 @@
 //Mega Menu
 .st-mega-menu {
-    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    @include md-screen {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @include lg-screen {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &-container {
+        @include lg-screen {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            overflow: hidden;
+            &::before {
+                content: url(../img/mega-menu-element-1.png);
+                position: absolute;
+                top: 0;
+                right: -50px;
+                z-index: -1;
+            }
+            &::after {
+                content: url(../img/mega-menu-element-2.png);
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
     &__title {
         display: block;
         text-align: left;
