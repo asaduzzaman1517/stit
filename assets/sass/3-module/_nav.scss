@@ -26,8 +26,8 @@
                 margin-bottom: 0;
             }
             a {
-                padding-top: 5px;
-                padding-bottom: 5px;
+                padding-top: 20px;
+                padding-bottom: 20px;
                 display: inline-block;
                 color: $white;
                 text-transform: uppercase;
@@ -143,8 +143,8 @@
     &::after {
         content: "\f107";
         position: absolute;
-        top: 16px;
-        right: 90px;
+        top: 30px;
+        right: 80px;
         transform: translateY(-50%);
         font-family: "Font Awesome 5 free";
         font-size: 16px;
@@ -153,11 +153,32 @@
         color: $secondary;
         @include md-screen {
             right: 230px;
-            top: 20px;
+            top: 35px;
         }
         @include lg-screen {
             right: -16px;
-            top: 14px;
+            top: 28px;
         }
+    }
+    @include lg-screen {
+        &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                position: absolute;
+                bottom: 0;
+                right: 14px;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-bottom: 15px solid white;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s ease;
+            }
+            &:hover::before {
+                opacity: 1;
+                visibility: visible;
+            }
+
     }
 }

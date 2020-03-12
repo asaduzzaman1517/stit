@@ -1,0 +1,50 @@
+.st-video {
+    &-container {
+        position: relative;
+        box-shadow: 5px 15px 35px rgba($black, 0.06);
+        @include xxl-screen {
+            &::after {
+                content: url(../img/flower.png);
+                position: absolute;
+                bottom: 0;
+                right: -60px;
+            }
+        }
+    }
+    &-play {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 70px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(-39deg, $custom-31, $custom-30);
+        color: $white;
+        font-size: 24px;
+        line-height: 1;
+        animation: about-play 2s infinite;
+        transition: all .2s ease;
+        &:hover {
+            cursor: pointer;
+            width: 75px;
+            height: 75px;
+        }
+    }
+}
+
+//Animation
+@keyframes about-play {
+    0% {
+        box-shadow: 0 0 0 0 $custom-32;
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba($custom-32, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba($custom-32, 0.1);
+    }
+}

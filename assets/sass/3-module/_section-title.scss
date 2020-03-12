@@ -9,7 +9,7 @@
         text-transform: capitalize;
         color: $secondary;
         &::before {
-            content: '';
+            content: "";
             width: 40px;
             height: 2px;
             position: absolute;
@@ -18,8 +18,13 @@
             background: $bg-one;
         }
         &--alt {
+            position: relative;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: $secondary;
             &::after {
-                content: '';
+                content: "";
                 width: 40px;
                 height: 2px;
                 position: absolute;

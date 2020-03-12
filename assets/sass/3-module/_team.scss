@@ -1,0 +1,18 @@
+.st-team {
+    &-img {
+        
+        &--left {
+            background-image: url(../img/team-1-bg.png);
+            background-position: center bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &--right {
+            background-image: url(../img/team-2-bg.png);
+            background-position: center bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            text-align: right;
+        }
+    }
+}

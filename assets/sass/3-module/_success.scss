@@ -1,0 +1,68 @@
+.st-success {
+    &-card {
+        text-align: center;
+        &__icon {
+            width: 115px;
+            height: 115px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &--one {
+                background: linear-gradient(-39deg, $custom-25, $white);
+                box-shadow: 0 7px 20px rgba($custom-25, .4);
+            }
+            &--two {
+                background: linear-gradient(-39deg, $custom-26, $white);
+                box-shadow: 0 7px 20px rgba($custom-26, .4);
+            }
+            &--three {
+                background: linear-gradient(-39deg, $custom-27, $white);
+                box-shadow: 0 7px 20px rgba($custom-27, .4);
+            }
+            &--four {
+                background: linear-gradient(-39deg, $custom-28, $white);
+                box-shadow: 0 7px 20px rgba($custom-29, .4);
+            }
+        }
+        &__icon-is {
+            font-size: 46px;
+            line-height: 1;
+            &--one {
+                color: darken($custom-25, 15%);
+            }
+            &--two {
+                color: darken($custom-26, 15%);
+            }
+            &--three {
+                color: darken($custom-27, 15%);
+            }
+            &--four {
+                color: darken($custom-29, 15%);
+            }
+        }
+        &__title {
+            margin-bottom: 5px;
+        }
+        &__title--one {
+            color: darken($custom-25, 15%);
+        }
+        &__title--two {
+            color: darken($custom-26, 15%);
+        }
+        &__title--three {
+            color: darken($custom-27, 15%);
+        }
+        &__title--four {
+            color: darken($custom-29, 15%);
+        }
+        &__text {
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+        &__info {
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+}

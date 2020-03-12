@@ -1,0 +1,36 @@
+//Table
+.st-table {
+    margin-bottom: 0;
+    color: $heading-text;
+    font-weight: 700;
+    text-transform: capitalize;
+    box-shadow: 60px 60px 200px rgba($black, .08);
+    .st-btn {
+        color: $heading-text;
+        &:hover {
+            color: $secondary;
+        }
+    }
+    
+    thead th {
+        text-align: center;
+        vertical-align: baseline;
+        border-bottom: none;
+    }
+    td {
+        text-align: center;
+        vertical-align: baseline;
+    }
+    &__active {
+        box-shadow:inset 30px 30px 60px rgba($black, .08);
+    }
+    &__min-width {
+        min-width: 120px;
+        @include md-screen {
+            min-width: auto;
+        }
+    }
+    &__bg {
+        box-shadow: 60px 60px 100px rgba($black, .1);
+    }
+}
