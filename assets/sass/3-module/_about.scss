@@ -2,12 +2,12 @@
 .st-about {
     padding-top: 120px;
     padding-bottom: 120px;
-    &-bg {
-        padding-top: 120px;
-        background-image: url(../img/about-shape.png);
-        background-size: initial;
-        background-position: right top;
-        background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    &__parallax {
+        position: absolute;
+        top: 100px;
+        right: 120px;
     }
     &__img {
         position: relative;

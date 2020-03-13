@@ -50,19 +50,53 @@
                             slidesToShow: 2,
                             slidesToScroll: 1
                         }
-					},
-					{
-						breakpoint: 991,
-						settings: {
-							slidesToShow: 3
-						}
-					},
-					{
-						breakpoint: 1365,
-						settings: {
-							slidesToShow: 4
-						}
-					}
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 1365,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    }
+                ]
+            });
+        }
+        //Feedback Slider
+        var feedFor = $(".st-feed-for");
+        var feedNav = $(".st-feed-nav");
+        if (feedFor.length) {
+            feedFor.slick({
+                mobileFirst: true,
+                slidesToShow: 1,
+                slideToScroll: 1,
+                arrows: false,
+                asNavFor: feedNav,
+                fade: true
+            });
+        }
+        if (feedNav.length) {
+            feedNav.slick({
+                mobileFirst: true,
+                slidesToShow: 1,
+                slideToScroll: 1,
+                asNavFor: feedFor,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            arrows: true,
+                            prevArrow:
+                                '<i class="fas fa-arrow-left feed-arrow feed-arrow-prev"></i>',
+                            nextArrow:
+                                '<i class="fas fa-arrow-right feed-arrow feed-arrow-next"></i>'
+                        }
+                    }
                 ]
             });
         }
@@ -124,10 +158,10 @@
             heroImgSix.css({
                 transform: "translate3d(" + valueX + "px," + valueY + "px, 0)"
             });
-		});
-		
-		//Video Popup
-		$(".st-video-play").magnificPopup({
+        });
+
+        //Video Popup
+        $(".st-video-play").magnificPopup({
             items: {
                 src: "https://www.youtube.com/watch?v=kshIWIc15yg"
             },
@@ -148,5 +182,41 @@
                 srcAction: "iframe_src"
             }
         });
+
+        // back to top
+        $(document).on("click", ".back-to-top", function() {
+            $("html,body").animate(
+                {
+                    scrollTop: 0
+                },
+                2000
+            );
+        });
     });
 })(jQuery);
+
+var lastScrollTop = "";
+$(window).on("scroll", function() {
+    var st = $(this).scrollTop();
+    lastScrollTop = st;
+
+    var ScrollTop = $(".back-to-top");
+    if ($(window).scrollTop() > 3000) {
+        ScrollTop.fadeIn(1000);
+    } else {
+        ScrollTop.fadeOut(1000);
+    }
+});
+
+
+// Parallax Plugin initialization
+window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}

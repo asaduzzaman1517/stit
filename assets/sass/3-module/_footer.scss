@@ -1,0 +1,55 @@
+.st-footer {
+    padding-top: 250px;
+    background-image: url(../img/footer-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include md-screen {
+        background-position: left center;
+    }
+    &__top {
+        padding-bottom: 60px;
+        border-bottom: 1px solid rgba($heading-text, .08);
+    }
+    &__widget {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            margin-bottom: 20px;
+            a {
+                display: inline-block;
+                color: $heading-text;
+                transition: all .3s ease;
+                &:hover {
+                    text-decoration: none;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    &__instagram {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        &-img {
+            width: 72px;
+            height: 72px;
+        }
+    }
+    &__title {
+        margin-bottom: 36px;
+        text-transform: capitalize;
+    }
+    &__nav {
+        display: flex;
+        &-icon {
+            margin-right: 16px;
+            font-size: 18px;
+            line-height: 1;
+        }
+    }
+}

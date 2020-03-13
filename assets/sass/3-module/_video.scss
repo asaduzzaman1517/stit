@@ -1,4 +1,15 @@
 .st-video {
+    background-image: url(../img/round-shape-right.png);
+    background-size: initial;
+    background-position: right 200px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    &__parallax {
+        position: absolute;
+        top: 100px;
+        left: 120px;
+    }
     &-container {
         position: relative;
         box-shadow: 5px 15px 35px rgba($black, 0.06);

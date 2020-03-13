@@ -13825,10 +13825,11 @@ h4 {
   font-size: 1.875rem; }
 
 h5 {
-  font-size: 1.5rem; }
+  font-size: 24px; }
 
 h6 {
-  font-size: 1.25rem; }
+  font-size: 18px;
+  font-weight: 700; }
 
 small,
 .sm-text {
@@ -14032,12 +14033,62 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     2.1 All course section
 -----------------------------------------*/
 .st-all-course {
-  padding-top: 120px;
-  padding-bottom: 188px;
+  position: relative;
+  overflow: hidden;
   background-image: url(../img/course-bg.png);
-  background-size: contain;
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .st-all-course__parallax {
+    position: absolute;
+    top: 100px;
+    left: 144px; }
+  .st-all-course__an-1 {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    -webkit-animation: animateTwo 16s linear infinite;
+    animation: animateTwo 16s linear infinite; }
+  .st-all-course__an-2 {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    -webkit-animation: animateFour 8s linear infinite;
+    animation: animateFour 8s linear infinite; }
+  .st-all-course__an-3 {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    -webkit-animation: animateOne 8s linear infinite;
+    animation: animateOne 8s linear infinite; }
+
+/*---------------------------------------
+    2.2 Work Shop
+-----------------------------------------*/
+.st-workshop {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/round-shape.png);
+  background-size: initial;
+  background-position: left 150px;
   background-repeat: no-repeat;
-  background-position: center; }
+  z-index: 0; }
+  .st-workshop__parallax {
+    position: absolute;
+    top: 100px;
+    right: 144px; }
+  .st-workshop__an-1 {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    -webkit-animation: animateFour 8s linear infinite;
+    animation: animateFour 8s linear infinite; }
+  .st-workshop__an-2 {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    -webkit-animation: animateOne 8s linear infinite;
+    animation: animateOne 8s linear infinite; }
 
 /*---------------------------------------
     0.3 Modules Style
@@ -14506,11 +14557,36 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .st-social__icon {
     color: #fff;
     font-size: 16px;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease; }
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     .st-social__icon:hover {
       color: #f48d0c; }
+  .st-social--footer .st-social__icon {
+    width: 34px;
+    height: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #666666;
+    border-radius: 50%;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .st-social--footer .st-social__icon:hover {
+      color: #fff;
+      background: #f48d0c;
+      border: 1px solid #f48d0c; }
 
 /*---------------------------------------
     3.9 Button
@@ -14554,13 +14630,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 -----------------------------------------*/
 .st-about {
   padding-top: 120px;
-  padding-bottom: 120px; }
-  .st-about-bg {
-    padding-top: 120px;
-    background-image: url(../img/about-shape.png);
-    background-size: initial;
-    background-position: right top;
-    background-repeat: no-repeat; }
+  padding-bottom: 120px;
+  position: relative;
+  overflow: hidden; }
+  .st-about__parallax {
+    position: absolute;
+    top: 100px;
+    right: 120px; }
   .st-about__img {
     position: relative; }
     .st-about__img::after {
@@ -15058,26 +15134,26 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: absolute;
     bottom: 170px;
     right: 100px;
-    -webkit-animation: animateOne 16s ease .5s infinite;
-    animation: animateOne 16s ease .5s infinite; }
+    -webkit-animation: animateOne 16s linear .5s infinite;
+    animation: animateOne 16s linear .5s infinite; }
   .st-hero-bg__animate-2 {
     position: absolute;
     top: 300px;
     left: 200px;
-    -webkit-animation: animateTwo 20s ease .5s infinite;
-    animation: animateTwo 20s ease .5s infinite; }
+    -webkit-animation: animateTwo 20s linear .5s infinite;
+    animation: animateTwo 20s linear .5s infinite; }
   .st-hero-bg__animate-3 {
     position: absolute;
     top: 100px;
     left: 300px;
-    -webkit-animation: animateOne 16s ease .5s infinite;
-    animation: animateOne 16s ease .5s infinite; }
+    -webkit-animation: animateOne 16s linear .5s infinite;
+    animation: animateOne 16s linear .5s infinite; }
   .st-hero-bg__animate-4 {
     position: absolute;
     bottom: 300px;
     left: 100px;
-    -webkit-animation: animateThree 20s ease .5s infinite;
-    animation: animateThree 20s ease .5s infinite; }
+    -webkit-animation: animateThree 20s linear .5s infinite;
+    animation: animateThree 20s linear .5s infinite; }
 
 @-webkit-keyframes animateOne {
   0% {
@@ -15103,19 +15179,35 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 @-webkit-keyframes animateTwo {
   0% {
-    -webkit-transform: rotate(0deg) translate(-20px) rotate(0deg);
-    transform: rotate(0deg) translate(-20px) rotate(0deg); }
+    -webkit-transform: rotate(0deg) translate(-60px) rotate(0deg);
+    transform: rotate(0deg) translate(-60px) rotate(0deg); }
   100% {
-    -webkit-transform: rotate(360deg) translate(-20px) rotate(-360deg);
-    transform: rotate(360deg) translate(-20px) rotate(-360deg); } }
+    -webkit-transform: rotate(360deg) translate(-60px) rotate(-360deg);
+    transform: rotate(360deg) translate(-60px) rotate(-360deg); } }
 
 @keyframes animateTwo {
   0% {
-    -webkit-transform: rotate(0deg) translate(-20px) rotate(0deg);
-    transform: rotate(0deg) translate(-20px) rotate(0deg); }
+    -webkit-transform: rotate(0deg) translate(-60px) rotate(0deg);
+    transform: rotate(0deg) translate(-60px) rotate(0deg); }
   100% {
-    -webkit-transform: rotate(360deg) translate(-20px) rotate(-360deg);
-    transform: rotate(360deg) translate(-20px) rotate(-360deg); } }
+    -webkit-transform: rotate(360deg) translate(-60px) rotate(-360deg);
+    transform: rotate(360deg) translate(-60px) rotate(-360deg); } }
+
+@-webkit-keyframes animateFour {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes animateFour {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 @-webkit-keyframes animateThree {
   0% {
@@ -15148,7 +15240,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-weight: 700;
   text-transform: capitalize;
   -webkit-box-shadow: 60px 60px 200px rgba(0, 0, 0, 0.08);
-  box-shadow: 60px 60px 200px rgba(0, 0, 0, 0.08); }
+  box-shadow: 60px 60px 200px rgba(0, 0, 0, 0.08);
+  background: #fff; }
   .st-table .st-btn {
     color: #121053; }
     .st-table .st-btn:hover {
@@ -15368,51 +15461,61 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /*---------------------------------------
     3.22 Video
 -----------------------------------------*/
-.st-video-container {
-  position: relative;
-  -webkit-box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.06);
-  box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.06); }
-  @media screen and (min-width: 1920px) {
-    .st-video-container::after {
-      content: url(../img/flower.png);
-      position: absolute;
-      bottom: 0;
-      right: -60px; } }
-
-.st-video-play {
-  width: 70px;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 70px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background: -webkit-linear-gradient(129deg, #f89edf, #fdaebc);
-  background: -o-linear-gradient(129deg, #f89edf, #fdaebc);
-  background: linear-gradient(-39deg, #f89edf, #fdaebc);
-  color: #fff;
-  font-size: 24px;
-  line-height: 1;
-  -webkit-animation: about-play 2s infinite;
-  animation: about-play 2s infinite;
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease; }
-  .st-video-play:hover {
-    cursor: pointer;
-    width: 75px;
-    height: 75px; }
+.st-video {
+  background-image: url(../img/round-shape-right.png);
+  background-size: initial;
+  background-position: right 200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative; }
+  .st-video__parallax {
+    position: absolute;
+    top: 100px;
+    left: 120px; }
+  .st-video-container {
+    position: relative;
+    -webkit-box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.06);
+    box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.06); }
+    @media screen and (min-width: 1920px) {
+      .st-video-container::after {
+        content: url(../img/flower.png);
+        position: absolute;
+        bottom: 0;
+        right: -60px; } }
+  .st-video-play {
+    width: 70px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: -webkit-linear-gradient(129deg, #f89edf, #fdaebc);
+    background: -o-linear-gradient(129deg, #f89edf, #fdaebc);
+    background: linear-gradient(-39deg, #f89edf, #fdaebc);
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    -webkit-animation: about-play 2s infinite;
+    animation: about-play 2s infinite;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease; }
+    .st-video-play:hover {
+      cursor: pointer;
+      width: 75px;
+      height: 75px; }
 
 @-webkit-keyframes about-play {
   0% {
@@ -15453,6 +15556,263 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   text-align: right; }
 
 /*---------------------------------------
+    3.24 Feed
+-----------------------------------------*/
+.st-feed {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbfbff), to(#fff));
+  background-image: -webkit-linear-gradient(#fbfbff, #fff);
+  background-image: -o-linear-gradient(#fbfbff, #fff);
+  background-image: linear-gradient(#fbfbff, #fff); }
+  .st-feed-nav__item:focus {
+    outline: none !important; }
+  .st-feed-nav__author {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px; }
+    .st-feed-nav__author-img {
+      width: 70px;
+      min-width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center; }
+    .st-feed-nav__author-designation {
+      font-size: 14px;
+      line-height: 1; }
+  .st-feed-nav .feed-arrow {
+    position: absolute;
+    top: -60px;
+    padding: 14px;
+    border: 1px solid #121053;
+    border-radius: 3px; }
+    @media screen and (min-width: 768px) {
+      .st-feed-nav .feed-arrow {
+        top: -120px; } }
+    @media screen and (min-width: 992px) {
+      .st-feed-nav .feed-arrow {
+        top: -150px; } }
+    @media screen and (min-width: 1200px) {
+      .st-feed-nav .feed-arrow {
+        top: -160px; } }
+    .st-feed-nav .feed-arrow:hover {
+      border: 1px transparent;
+      background-color: #f48d0c;
+      color: #fff;
+      cursor: pointer; }
+    .st-feed-nav .feed-arrow-next {
+      right: 0; }
+    .st-feed-nav .feed-arrow-prev {
+      right: 60px; }
+  .st-feed-for__item:focus {
+    outline: none !important; }
+
+/*---------------------------------------
+    3.25 CTA
+-----------------------------------------*/
+.st-cta {
+  position: relative;
+  bottom: -130px; }
+  .st-cta__wrapper {
+    background: url(../img/cta-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media screen and (min-width: 1200px) {
+      .st-cta__wrapper {
+        padding-left: 80px;
+        padding-right: 80px; } }
+  .st-cta-form__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #0434d1; }
+  .st-cta-form__label {
+    padding-left: 30px;
+    margin-bottom: 0;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px; }
+    .st-cta-form__label:hover {
+      cursor: text; }
+    .st-cta-form__label span {
+      display: inline-block;
+      font-size: 24px;
+      line-height: 1; }
+  .st-cta-form__input {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: transparent;
+    border: transparent; }
+    .st-cta-form__input:focus {
+      outline: none; }
+    .st-cta-form__input::-webkit-input-placeholder {
+      color: #fff; }
+    .st-cta-form__input:-ms-input-placeholder {
+      color: #fff; }
+    .st-cta-form__input::-ms-input-placeholder {
+      color: #fff; }
+    .st-cta-form__input::placeholder {
+      color: #fff; }
+
+/*---------------------------------------
+    3.25 CTA
+-----------------------------------------*/
+.st-footer {
+  padding-top: 250px;
+  background-image: url(../img/footer-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media screen and (min-width: 768px) {
+    .st-footer {
+      background-position: left center; } }
+  .st-footer__top {
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(18, 16, 83, 0.08); }
+  .st-footer__widget {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .st-footer__widget li {
+      margin-bottom: 20px; }
+      .st-footer__widget li a {
+        display: inline-block;
+        color: #121053;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease; }
+        .st-footer__widget li a:hover {
+          text-decoration: none;
+          color: #f48d0c; }
+  .st-footer__instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .st-footer__instagram li {
+      margin-right: 5px;
+      margin-bottom: 5px; }
+    .st-footer__instagram-img {
+      width: 72px;
+      height: 72px; }
+  .st-footer__title {
+    margin-bottom: 36px;
+    text-transform: capitalize; }
+  .st-footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .st-footer__nav-icon {
+      margin-right: 16px;
+      font-size: 18px;
+      line-height: 1; }
+
+/*---------------------------------------
+    3.26 Newsletter
+-----------------------------------------*/
+.st-newsletter__input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: none;
+  border-radius: 3px 0 0 3px; }
+  .st-newsletter__input::-webkit-input-placeholder {
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 1;
+    color: #bababa; }
+  .st-newsletter__input:-ms-input-placeholder {
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 1;
+    color: #bababa; }
+  .st-newsletter__input::-ms-input-placeholder {
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 1;
+    color: #bababa; }
+  .st-newsletter__input::placeholder {
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 1;
+    color: #bababa; }
+  .st-newsletter__input:focus {
+    outline: none; }
+  .st-newsletter__input-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.st-newsletter__link {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 0 3px 3px 0;
+  background: #f48d0c;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .st-newsletter__link:hover {
+    text-decoration: none;
+    background: rgba(250, 198, 134, 0.8); }
+    .st-newsletter__link:hover .st-newsletter__link-text {
+      color: #f48d0c; }
+  .st-newsletter__link-text {
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+/*---------------------------------------
+    3.27 Back to Top
+-----------------------------------------*/
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  width: 40px;
+  height: 50px;
+  background-color: #c89bfe;
+  color: #fff;
+  text-align: center;
+  z-index: 9999;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  display: none; }
+  .back-to-top:hover {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); }
+  .back-to-top__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+/*---------------------------------------
     0.4 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -15464,9 +15824,21 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /*---------------------------------------
     4.2 Text Color
 -----------------------------------------*/
+.t-text-light {
+  color: #fff; }
+
 /*---------------------------------------
     4.3 Margin
 -----------------------------------------*/
+.t-mt-30 {
+  margin-top: 30px; }
+
+.t-mb-15-md-30 {
+  margin-bottom: 15px; }
+  @media screen and (min-width: 768px) {
+    .t-mb-15-md-30 {
+      margin-bottom: 30px; } }
+
 .t-mb-30 {
   margin-bottom: 30px; }
 
@@ -15497,11 +15869,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .t-pt-10 {
   padding-top: 10px; }
 
+.t-pt-60 {
+  padding-top: 60px; }
+
 .t-pt-120 {
   padding-top: 120px; }
 
+.t-pb-60 {
+  padding-bottom: 60px; }
+
 .t-pb-120 {
   padding-bottom: 120px; }
+
+.t-pb-250 {
+  padding-bottom: 250px; }
 
 /*---------------------------------------
     4.5 Spacer

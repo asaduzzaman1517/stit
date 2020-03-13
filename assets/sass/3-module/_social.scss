@@ -21,9 +21,30 @@
     &__icon {
         color: $white;
         font-size: 16px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         &:hover {
             color: $secondary;
+        }
+    }
+    &--footer {
+        .st-social__icon {
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 1px solid $text-icon;
+            border-radius: 50%;
+            color: $text-icon;
+            font-size: 14px;
+            line-height: 1;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $white;
+                background: $secondary;
+                border: 1px solid $secondary;
+            }
         }
     }
 }

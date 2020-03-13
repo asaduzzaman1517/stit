@@ -1,5 +1,14 @@
 //Margin Top
+.t-mt-30 {
+    margin-top: 30px;
+}
 //Margin Bottom
+.t-mb-15-md-30 {
+    margin-bottom: 15px;
+    @include md-screen {
+        margin-bottom: 30px;
+    }
+}
 .t-mb-30 {
     margin-bottom: 30px;
 }

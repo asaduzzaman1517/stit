@@ -1,0 +1,50 @@
+.st-newsletter {
+    &__input {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border: none;
+        border-radius: 3px 0 0 3px;
+        &::placeholder {
+            padding-left: 10px;
+            font-size: 12px;
+            line-height: 1;
+            color: $text-light;
+        }
+        &:focus {
+            outline: none;
+        }
+        &-group {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__link {
+        display: inline-block;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 0 3px 3px 0;
+        background: $secondary;
+        transition: all .3s ease;
+        &:hover{
+            text-decoration: none;
+            
+            background: lighten(rgba($secondary, .8), 25%);
+            .st-newsletter__link-text {
+                color: $secondary;
+                
+            }
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 1;
+            color: $white;
+            font-weight: 500;
+            text-transform: capitalize;
+            display: flex;
+        }
+    }
+}

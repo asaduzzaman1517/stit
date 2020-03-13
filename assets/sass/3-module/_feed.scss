@@ -1,0 +1,62 @@
+.st-feed {
+    background-image: linear-gradient($light-bg-2, $white);
+    &-nav {
+        &__item {
+            &:focus {
+                outline: none !important;
+            }
+        }
+        &__author {
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            &-img {
+                width: 70px;
+                min-width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                overflow: hidden;
+                text-align: center;
+            }
+            &-designation {
+                font-size: 14px;
+                line-height: 1;
+            }
+        }
+        .feed-arrow {
+            position: absolute;
+            top: -60px;
+            padding: 14px;
+            border: 1px solid $heading-text;
+            border-radius: 3px;
+            @include md-screen {
+                top: -120px;
+            }
+            @include lg-screen {
+                top: -150px;
+            }
+            @include xl-screen {
+                top: -160px;
+            }
+            &:hover {
+                border: 1px transparent;
+                background-color: $secondary;
+                color: $white;
+                cursor: pointer;
+            }
+            &-next {
+                right: 0;
+            }
+            &-prev {
+                right: 60px;
+            }
+        }
+    }
+    &-for {
+        &__item {
+            &:focus {
+                outline: none !important;
+            }
+        }
+    }
+}
