@@ -116,6 +116,7 @@
             z-index: 99;
             top: 100%;
             transform: translateX(-50%);
+            box-shadow: 5px 5px 15px rgba($black, .08);
             @include lg-screen {
                 width: 650px;
                 max-width: 650px;
