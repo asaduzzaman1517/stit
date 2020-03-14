@@ -7,9 +7,10 @@
     box-shadow: 60px 60px 200px rgba($black, .08);
     background: $white;
     .st-btn {
-        color: $heading-text;
+        color: $secondary;
         &:hover {
-            color: $secondary;
+            
+            color: $heading-text;
         }
     }
     

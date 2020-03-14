@@ -2,6 +2,21 @@
 .st_hero {
     &-title {
         color: $white;
+        position: relative;
+        z-index: 1;
+        @include xxl-screen {
+            &::after {
+                content: "Boost Up Your Career";
+                position: absolute;
+                top: -60px;
+                left: 0;
+                -webkit-text-stroke: 1px rgba($secondary, .2);
+                -webkit-text-fill-color: transparent;
+                font-family: $heading-font;
+                font-size: 140px;
+                z-index: -1;
+            }
+        }
     }
     &-subtitle {
         display: block;

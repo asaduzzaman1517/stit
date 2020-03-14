@@ -5,7 +5,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     @include md-screen {
+        background-image: none;
         background-position: left center;
+    }
+    @include xl-screen {
+        background-image: url(../img/footer-bg.png);
     }
     &__top {
         padding-bottom: 60px;

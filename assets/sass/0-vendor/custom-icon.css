@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?rw11g1');
-  src:  url('../fonts/icomoon.eot?rw11g1#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?rw11g1') format('truetype'),
-    url('../fonts/icomoon.woff?rw11g1') format('woff'),
-    url('../fonts/icomoon.svg?rw11g1#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?py8jv7');
+  src:  url('../fonts/icomoon.eot?py8jv7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?py8jv7') format('truetype'),
+    url('../fonts/icomoon.woff?py8jv7') format('woff'),
+    url('../fonts/icomoon.svg?py8jv7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -40,7 +40,7 @@
 .icon-js-format:before {
   content: "\e904";
 }
-.icon-ui:before {
+.icon-ui1:before {
   content: "\e905";
 }
 .icon-user:before {
@@ -76,7 +76,7 @@
 .icon-smartphone:before {
   content: "\e910";
 }
-.icon-ui1:before {
+.icon-ui:before {
   content: "\e911";
 }
 .icon-3d:before {
@@ -103,84 +103,90 @@
 .icon-arrow_right-24px:before {
   content: "\e919";
 }
-.icon-blockquote:before {
-  content: "\e935";
-}
-.icon-clock:before {
+.icon-blockquote-left:before {
   content: "\e91a";
 }
-.icon-Custom-WP:before {
+.icon-blockquote:before {
   content: "\e91b";
 }
-.icon-dashboard-24px:before {
+.icon-clock-1:before {
   content: "\e91c";
 }
-.icon-description-24px:before {
+.icon-clock:before {
   content: "\e91d";
 }
-.icon-email-24px:before {
+.icon-Custom-WP:before {
   content: "\e91e";
 }
-.icon-extension-24px-1:before {
+.icon-dashboard-24px:before {
   content: "\e91f";
 }
-.icon-forum-24px:before {
+.icon-description-24px:before {
   content: "\e920";
 }
-.icon-layers:before {
+.icon-email-24px:before {
   content: "\e921";
 }
-.icon-list-24px:before {
+.icon-Employe:before {
   content: "\e922";
 }
-.icon-local_library-24px:before {
+.icon-extension-24px-1:before {
   content: "\e923";
 }
-.icon-notifications-24px:before {
+.icon-forum-24px:before {
   content: "\e924";
 }
-.icon-office:before {
+.icon-Icon-students:before {
   content: "\e925";
 }
-.icon-people-24px:before {
+.icon-Job:before {
   content: "\e926";
 }
-.icon-Phone-01:before {
+.icon-layers:before {
   content: "\e927";
 }
-.icon-phone_in_talk-24px:before {
+.icon-list-24px:before {
   content: "\e928";
 }
-.icon-question_answer-24px:before {
+.icon-local_library-24px:before {
   content: "\e929";
 }
-.icon-reorder-24px:before {
+.icon-notifications-24px:before {
   content: "\e92a";
 }
-.icon-school-24px:before {
+.icon-office:before {
   content: "\e92b";
 }
-.icon-SEO:before {
+.icon-people-24px:before {
   content: "\e92c";
 }
-.icon-tag_faces-24px:before {
+.icon-Phone-01:before {
   content: "\e92d";
 }
-.icon-trending_flat-24px:before {
+.icon-reorder-24px:before {
   content: "\e92e";
 }
-.icon-Video_play:before {
+.icon-school-24px:before {
+  content: "\e92f";
+}
+.icon-SEO:before {
   content: "\e930";
 }
-.icon-watch:before {
+.icon-tag_faces-24px:before {
   content: "\e931";
 }
-.icon-Web:before {
+.icon-trending_flat-24px:before {
   content: "\e932";
 }
-.icon-WordPress:before {
+.icon-Video_play:before {
   content: "\e933";
 }
-.icon-worldwide:before {
+.icon-Web:before {
   content: "\e934";
+}
+.icon-WordPress:before {
+  content: "\e935";
+}
+.icon-worldwide:before {
+  content: "\e936";
 }

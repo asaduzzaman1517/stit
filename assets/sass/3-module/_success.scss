@@ -10,23 +10,23 @@
             align-items: center;
             &--one {
                 background: linear-gradient(-39deg, $custom-25, $white);
-                box-shadow: 0 7px 20px rgba($custom-25, .4);
+                box-shadow: 0 7px 20px rgba($custom-25, .3);
             }
             &--two {
                 background: linear-gradient(-39deg, $custom-26, $white);
-                box-shadow: 0 7px 20px rgba($custom-26, .4);
+                box-shadow: 0 7px 20px rgba($custom-25, .3);
             }
             &--three {
                 background: linear-gradient(-39deg, $custom-27, $white);
-                box-shadow: 0 7px 20px rgba($custom-27, .4);
+                box-shadow: 0 7px 20px rgba($custom-25, .3);
             }
             &--four {
                 background: linear-gradient(-39deg, $custom-28, $white);
-                box-shadow: 0 7px 20px rgba($custom-29, .4);
+                box-shadow: 0 7px 20px rgba($custom-25, .3);
             }
         }
         &__icon-is {
-            font-size: 46px;
+            font-size: 36px;
             line-height: 1;
             &--one {
                 color: darken($custom-25, 15%);
@@ -38,7 +38,7 @@
                 color: darken($custom-27, 15%);
             }
             &--four {
-                color: darken($custom-29, 15%);
+                color: $custom-36;
             }
         }
         &__title {
@@ -54,7 +54,7 @@
             color: darken($custom-27, 15%);
         }
         &__title--four {
-            color: darken($custom-29, 15%);
+            color: $custom-36;
         }
         &__text {
             text-transform: capitalize;

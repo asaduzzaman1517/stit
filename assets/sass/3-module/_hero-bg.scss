@@ -54,40 +54,45 @@
         top: -60px;
         right: 0;
         color: $custom-23;
-        font-size: 80px;
+        font-size: 40px;
         line-height: 1;
+        animation: animateThree 16s linear .5s infinite ;
     }
     &__ani-two {
         position: absolute;
         top: -30px;
         right: 120px;
         color: $custom-18;
-        font-size: 50px;
+        font-size: 40px;
         line-height: 1;
+        animation: animateFour 16s linear .5s infinite ;
     }
     &__ani-three {
         position: absolute;
         top: -20px;
-        left: 80px;
+        left: 40px;
         color: $custom-14;
         font-size: 50px;
         line-height: 1;
+        animation: animateOne 16s linear .5s infinite ;
     }
     &__ani-four {
         position: absolute;
         bottom: 150px;
         left: -40px;
         color: $custom-23;
-        font-size: 50px;
+        font-size: 40px;
         line-height: 1;
+        animation: animateThree 16s linear .5s infinite ;
     }
     &__ani-five {
         position: absolute;
         bottom: -30px;
         right: 200px;
         color: $custom-18;
-        font-size: 50px;
+        font-size: 40px;
         line-height: 1;
+        animation: animateTwo 20s linear .5s infinite ;
     }
     &__animate-1 {
         position: absolute;

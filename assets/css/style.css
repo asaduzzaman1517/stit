@@ -12987,8 +12987,8 @@ readers do not read off random characters that represent icons */
 -----------------------------------------*/
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?rw11g1");
-  src: url("../fonts/icomoon.eot?rw11g1#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rw11g1") format("truetype"), url("../fonts/icomoon.woff?rw11g1") format("woff"), url("../fonts/icomoon.svg?rw11g1#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?py8jv7");
+  src: url("../fonts/icomoon.eot?py8jv7#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?py8jv7") format("truetype"), url("../fonts/icomoon.woff?py8jv7") format("woff"), url("../fonts/icomoon.svg?py8jv7#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -13021,7 +13021,7 @@ readers do not read off random characters that represent icons */
 .icon-js-format:before {
   content: "\e904"; }
 
-.icon-ui:before {
+.icon-ui1:before {
   content: "\e905"; }
 
 .icon-user:before {
@@ -13057,7 +13057,7 @@ readers do not read off random characters that represent icons */
 .icon-smartphone:before {
   content: "\e910"; }
 
-.icon-ui1:before {
+.icon-ui:before {
   content: "\e911"; }
 
 .icon-3d:before {
@@ -13084,86 +13084,92 @@ readers do not read off random characters that represent icons */
 .icon-arrow_right-24px:before {
   content: "\e919"; }
 
-.icon-blockquote:before {
-  content: "\e935"; }
-
-.icon-clock:before {
+.icon-blockquote-left:before {
   content: "\e91a"; }
 
-.icon-Custom-WP:before {
+.icon-blockquote:before {
   content: "\e91b"; }
 
-.icon-dashboard-24px:before {
+.icon-clock-1:before {
   content: "\e91c"; }
 
-.icon-description-24px:before {
+.icon-clock:before {
   content: "\e91d"; }
 
-.icon-email-24px:before {
+.icon-Custom-WP:before {
   content: "\e91e"; }
 
-.icon-extension-24px-1:before {
+.icon-dashboard-24px:before {
   content: "\e91f"; }
 
-.icon-forum-24px:before {
+.icon-description-24px:before {
   content: "\e920"; }
 
-.icon-layers:before {
+.icon-email-24px:before {
   content: "\e921"; }
 
-.icon-list-24px:before {
+.icon-Employe:before {
   content: "\e922"; }
 
-.icon-local_library-24px:before {
+.icon-extension-24px-1:before {
   content: "\e923"; }
 
-.icon-notifications-24px:before {
+.icon-forum-24px:before {
   content: "\e924"; }
 
-.icon-office:before {
+.icon-Icon-students:before {
   content: "\e925"; }
 
-.icon-people-24px:before {
+.icon-Job:before {
   content: "\e926"; }
 
-.icon-Phone-01:before {
+.icon-layers:before {
   content: "\e927"; }
 
-.icon-phone_in_talk-24px:before {
+.icon-list-24px:before {
   content: "\e928"; }
 
-.icon-question_answer-24px:before {
+.icon-local_library-24px:before {
   content: "\e929"; }
 
-.icon-reorder-24px:before {
+.icon-notifications-24px:before {
   content: "\e92a"; }
 
-.icon-school-24px:before {
+.icon-office:before {
   content: "\e92b"; }
 
-.icon-SEO:before {
+.icon-people-24px:before {
   content: "\e92c"; }
 
-.icon-tag_faces-24px:before {
+.icon-Phone-01:before {
   content: "\e92d"; }
 
-.icon-trending_flat-24px:before {
+.icon-reorder-24px:before {
   content: "\e92e"; }
 
-.icon-Video_play:before {
+.icon-school-24px:before {
+  content: "\e92f"; }
+
+.icon-SEO:before {
   content: "\e930"; }
 
-.icon-watch:before {
+.icon-tag_faces-24px:before {
   content: "\e931"; }
 
-.icon-Web:before {
+.icon-trending_flat-24px:before {
   content: "\e932"; }
 
-.icon-WordPress:before {
+.icon-Video_play:before {
   content: "\e933"; }
 
-.icon-worldwide:before {
+.icon-Web:before {
   content: "\e934"; }
+
+.icon-WordPress:before {
+  content: "\e935"; }
+
+.icon-worldwide:before {
+  content: "\e936"; }
 
 /*---------------------------------------
     0.4 Slick Slider
@@ -14418,7 +14424,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: relative;
     visibility: visible;
     opacity: 1;
-    z-index: 1;
+    z-index: 99;
     top: 100%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -14488,7 +14494,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     3.6 Hero
 -----------------------------------------*/
 .st_hero-title {
-  color: #fff; }
+  color: #fff;
+  position: relative;
+  z-index: 1; }
+  @media screen and (min-width: 1920px) {
+    .st_hero-title::after {
+      content: "Boost Up Your Career";
+      position: absolute;
+      top: -60px;
+      left: 0;
+      -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+      -webkit-text-fill-color: transparent;
+      font-family: "Poppins", sans-serif;
+      font-size: 140px;
+      z-index: -1; } }
 
 .st_hero-subtitle {
   display: block;
@@ -14511,15 +14530,29 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       line-height: 1.5; }
   .st-header-top__slider {
     position: relative; }
-    .st-header-top__slider-item {
-      color: #fff; }
+    .st-header-top__slider-item a {
+      color: #fff;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+      .st-header-top__slider-item a:hover {
+        color: #f48d0c;
+        text-decoration: none; }
+    .st-header-top__slider-item:focus {
+      outline: none; }
     .st-header-top__slider .slick-arrow {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      color: #fff; }
+      color: #fff;
+      cursor: pointer;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+      .st-header-top__slider .slick-arrow:hover {
+        color: #f48d0c; }
       .st-header-top__slider .slick-arrow-prev {
         right: 10px;
         z-index: 9999; }
@@ -14600,6 +14633,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     padding-left: 22px;
     padding-right: 22px;
     background: #f48d0c; }
+  .st-btn--secondary {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    padding-right: 22px;
+    background: rgba(250, 198, 134, 0.3);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .st-btn--secondary:hover {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      background: #f48d0c; }
   .st-btn-link {
     display: inline-block;
     -webkit-transition: all .3s ease;
@@ -14618,12 +14665,18 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       color: #fff; }
       .st-btn-link--secondary:hover {
         color: #f48d0c; }
+    .st-btn-link--tertiary {
+      text-transform: capitalize;
+      color: #f48d0c; }
   .st-btn-icon {
     margin-left: 5px; }
   .st-btn-rounded {
     border-radius: 50px; }
   .st-btn-short-round {
     border-radius: 5px; }
+  .st-btn-group {
+    position: relative;
+    z-index: 9; }
 
 /*---------------------------------------
     3.10 About
@@ -14702,7 +14755,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-size: 18px;
   font-weight: 500; }
   .st-blockquote-icon::before {
-    content: '\e935';
+    content: '\e91a';
     font-family: 'icomoon';
     position: absolute;
     top: 10px;
@@ -14722,7 +14775,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   transition: all .3s ease; }
   .st-course-card:hover {
     -webkit-box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.05); }
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.05);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px); }
   .st-course-card--1 {
     background-color: #e4fcff; }
     .st-course-card--1::before {
@@ -14864,7 +14920,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     display: block;
     margin-top: 25px;
     font-weight: 700;
-    font-size: 20px; }
+    font-size: 20px;
+    color: #121053;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .st-course-card__title:hover {
+      color: #121053;
+      text-decoration: none; }
 
 /*---------------------------------------
     3.14 Event Date
@@ -15100,36 +15163,46 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     top: -60px;
     right: 0;
     color: #fe9f61;
-    font-size: 80px;
-    line-height: 1; }
+    font-size: 40px;
+    line-height: 1;
+    -webkit-animation: animateThree 16s linear .5s infinite;
+    animation: animateThree 16s linear .5s infinite; }
   .st-hero-bg__ani-two {
     position: absolute;
     top: -30px;
     right: 120px;
     color: #2494ff;
-    font-size: 50px;
-    line-height: 1; }
+    font-size: 40px;
+    line-height: 1;
+    -webkit-animation: animateFour 16s linear .5s infinite;
+    animation: animateFour 16s linear .5s infinite; }
   .st-hero-bg__ani-three {
     position: absolute;
     top: -20px;
-    left: 80px;
+    left: 40px;
     color: #ff5f72;
     font-size: 50px;
-    line-height: 1; }
+    line-height: 1;
+    -webkit-animation: animateOne 16s linear .5s infinite;
+    animation: animateOne 16s linear .5s infinite; }
   .st-hero-bg__ani-four {
     position: absolute;
     bottom: 150px;
     left: -40px;
     color: #fe9f61;
-    font-size: 50px;
-    line-height: 1; }
+    font-size: 40px;
+    line-height: 1;
+    -webkit-animation: animateThree 16s linear .5s infinite;
+    animation: animateThree 16s linear .5s infinite; }
   .st-hero-bg__ani-five {
     position: absolute;
     bottom: -30px;
     right: 200px;
     color: #2494ff;
-    font-size: 50px;
-    line-height: 1; }
+    font-size: 40px;
+    line-height: 1;
+    -webkit-animation: animateTwo 20s linear .5s infinite;
+    animation: animateTwo 20s linear .5s infinite; }
   .st-hero-bg__animate-1 {
     position: absolute;
     bottom: 170px;
@@ -15243,9 +15316,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   box-shadow: 60px 60px 200px rgba(0, 0, 0, 0.08);
   background: #fff; }
   .st-table .st-btn {
-    color: #121053; }
+    color: #f48d0c; }
     .st-table .st-btn:hover {
-      color: #f48d0c; }
+      color: #121053; }
   .st-table thead th {
     text-align: center;
     vertical-align: baseline;
@@ -15287,28 +15360,28 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       background: -webkit-linear-gradient(129deg, #a4d3ff, #fff);
       background: -o-linear-gradient(129deg, #a4d3ff, #fff);
       background: linear-gradient(-39deg, #a4d3ff, #fff);
-      -webkit-box-shadow: 0 7px 20px rgba(164, 211, 255, 0.4);
-      box-shadow: 0 7px 20px rgba(164, 211, 255, 0.4); }
+      -webkit-box-shadow: 0 7px 20px rgba(164, 211, 255, 0.3);
+      box-shadow: 0 7px 20px rgba(164, 211, 255, 0.3); }
     .st-success-card__icon--two {
       background: -webkit-linear-gradient(129deg, #fbb157, #fff);
       background: -o-linear-gradient(129deg, #fbb157, #fff);
       background: linear-gradient(-39deg, #fbb157, #fff);
-      -webkit-box-shadow: 0 7px 20px rgba(251, 177, 87, 0.4);
-      box-shadow: 0 7px 20px rgba(251, 177, 87, 0.4); }
+      -webkit-box-shadow: 0 7px 20px rgba(164, 211, 255, 0.3);
+      box-shadow: 0 7px 20px rgba(164, 211, 255, 0.3); }
     .st-success-card__icon--three {
       background: -webkit-linear-gradient(129deg, #fd7693, #fff);
       background: -o-linear-gradient(129deg, #fd7693, #fff);
       background: linear-gradient(-39deg, #fd7693, #fff);
-      -webkit-box-shadow: 0 7px 20px rgba(253, 118, 147, 0.4);
-      box-shadow: 0 7px 20px rgba(253, 118, 147, 0.4); }
+      -webkit-box-shadow: 0 7px 20px rgba(164, 211, 255, 0.3);
+      box-shadow: 0 7px 20px rgba(164, 211, 255, 0.3); }
     .st-success-card__icon--four {
-      background: -webkit-linear-gradient(129deg, #9cffb6, #fff);
-      background: -o-linear-gradient(129deg, #9cffb6, #fff);
-      background: linear-gradient(-39deg, #9cffb6, #fff);
-      -webkit-box-shadow: 0 7px 20px rgba(85, 255, 129, 0.4);
-      box-shadow: 0 7px 20px rgba(85, 255, 129, 0.4); }
+      background: -webkit-linear-gradient(129deg, #81faa2, #fff);
+      background: -o-linear-gradient(129deg, #81faa2, #fff);
+      background: linear-gradient(-39deg, #81faa2, #fff);
+      -webkit-box-shadow: 0 7px 20px rgba(164, 211, 255, 0.3);
+      box-shadow: 0 7px 20px rgba(164, 211, 255, 0.3); }
   .st-success-card__icon-is {
-    font-size: 46px;
+    font-size: 36px;
     line-height: 1; }
     .st-success-card__icon-is--one {
       color: #58aeff; }
@@ -15317,7 +15390,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     .st-success-card__icon-is--three {
       color: #fc2b58; }
     .st-success-card__icon-is--four {
-      color: #09ff48; }
+      color: #01c93b; }
   .st-success-card__title {
     margin-bottom: 5px; }
   .st-success-card__title--one {
@@ -15327,7 +15400,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .st-success-card__title--three {
     color: #fc2b58; }
   .st-success-card__title--four {
-    color: #09ff48; }
+    color: #01c93b; }
   .st-success-card__text {
     text-transform: capitalize;
     font-weight: 700; }
@@ -15411,7 +15484,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .st-service-slider__icon--four {
     color: #009029; }
   .st-service-slider__icon-is {
-    font-size: 66px;
+    font-size: 40px;
     line-height: 1; }
   .st-service-slider__body {
     margin-top: 50px; }
@@ -15542,18 +15615,43 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /*---------------------------------------
     3.23 Team
 -----------------------------------------*/
-.st-team-img--left {
-  background-image: url(../img/team-1-bg.png);
-  background-position: center bottom;
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.st-team-img--right {
-  background-image: url(../img/team-2-bg.png);
-  background-position: center bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  text-align: right; }
+.st-team {
+  position: relative;
+  overflow: hidden; }
+  .st-team__el-1 {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: animateThree 20s linear .5s infinite;
+    animation: animateThree 20s linear .5s infinite; }
+  .st-team__el-2 {
+    position: absolute;
+    top: 400px;
+    right: 200px;
+    -webkit-animation: animateThree 20s linear .5s infinite;
+    animation: animateThree 20s linear .5s infinite; }
+  .st-team__el-3 {
+    position: absolute;
+    top: 600px;
+    right: 100px;
+    -webkit-animation: animateThree 20s linear .5s infinite;
+    animation: animateThree 20s linear .5s infinite; }
+  .st-team__el-4 {
+    position: absolute; }
+  .st-team-img--left {
+    background-image: url(../img/team-1-bg.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .st-team-img--right {
+    background-image: url(../img/team-2-bg.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: right; }
 
 /*---------------------------------------
     3.24 Feed
@@ -15650,7 +15748,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     padding-top: 15px;
     padding-bottom: 15px;
     background: transparent;
-    border: transparent; }
+    border: transparent;
+    color: #fff; }
     .st-cta-form__input:focus {
       outline: none; }
     .st-cta-form__input::-webkit-input-placeholder {
@@ -15673,7 +15772,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-size: cover; }
   @media screen and (min-width: 768px) {
     .st-footer {
+      background-image: none;
       background-position: left center; } }
+  @media screen and (min-width: 1200px) {
+    .st-footer {
+      background-image: url(../img/footer-bg.png); } }
   .st-footer__top {
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(18, 16, 83, 0.08); }
@@ -15883,6 +15986,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-pb-250 {
   padding-bottom: 250px; }
+
+.t-pb-140 {
+  padding-bottom: 140px; }
 
 /*---------------------------------------
     4.5 Spacer

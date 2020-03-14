@@ -16,7 +16,18 @@
     &__slider {
         position: relative;
         &-item {
-            color: $white;
+            a {
+                color: $white;
+                transition: all .3s ease;
+                &:hover {
+                    color: $secondary;
+                    text-decoration: none;
+
+                }
+            }
+            &:focus {
+                outline: none;
+            }
         }
         //Slider Customization
         .slick-arrow {
@@ -24,6 +35,11 @@
             top: 50%;
             transform: translateY(-50%);
             color: $white;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover {
+                color: $secondary;
+            }
             &-prev {
                 right: 10px;
                 z-index: 9999;

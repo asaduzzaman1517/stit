@@ -1,4 +1,29 @@
 .st-team {
+    position: relative;
+    overflow: hidden;
+    &__el-1 {
+        position: absolute;
+        top: 200px;
+        right: 100px;
+        transform: rotate(45deg);
+        animation: animateThree 20s linear .5s infinite;
+    }
+    &__el-2 {
+        position: absolute;
+        top: 400px;
+        right: 200px;
+        animation: animateThree 20s linear .5s infinite;
+    }
+    &__el-3 {
+        position: absolute;
+        top: 600px;
+        right: 100px;
+        animation: animateThree 20s linear .5s infinite;
+    }
+    &__el-4 {
+        position: absolute;
+        
+    }
     &-img {
         
         &--left {

@@ -6,6 +6,7 @@
     transition: all .3s ease;
     &:hover {
         box-shadow: 10px 10px 20px 0 rgba($black, 0.05);
+        transform: translateY(-2px);
     }
     &--1 {
         background-color: $custom-1;
@@ -152,5 +153,11 @@
         margin-top: 25px;
         font-weight: 700;
         font-size: 20px;
+        color: $heading-text;
+        transition: all .3s ease;
+        &:hover {
+            color: $heading-text;
+            text-decoration: none;
+        }
     }
 }

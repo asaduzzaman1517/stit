@@ -9,6 +9,19 @@
         padding-right: 22px;
         background: $secondary;
     }
+    &--secondary {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 22px;
+        padding-right: 22px;
+        background: lighten(rgba($secondary, .3), 25%);
+        transition: all .3s ease;
+        &:hover {
+            box-shadow: 0 5px 15px rgba($black, .1);
+            color: $white;
+            background: $secondary;
+        }
+    }
     &-link {
         display: inline-block;
         transition: all .3s ease;
@@ -23,12 +36,17 @@
                 color: $bg-one;
             }
         }
+        
         &--secondary {
             text-transform: capitalize;
             color: $white;
             &:hover {
                 color: $secondary;
             }
+        }
+        &--tertiary {
+            text-transform: capitalize;
+            color: $secondary;
         }
     }
     &-icon {
@@ -39,5 +57,9 @@
     }
     &-short-round {
         border-radius: 5px;
+    }
+    &-group {
+        position: relative;
+        z-index: 9;
     }
 }
