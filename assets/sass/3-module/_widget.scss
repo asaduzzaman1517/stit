@@ -1,0 +1,13 @@
+.st-widget {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: $light-bg;
+    &__title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        line-height: 1;
+        text-transform: capitalize;
+    }
+}

@@ -1,4 +1,7 @@
 //Margin Top
+.t-mt-18 {
+    margin-top: 18px;
+}
 .t-mt-30 {
     margin-top: 30px;
 }
@@ -8,6 +11,9 @@
     @include md-screen {
         margin-bottom: 30px;
     }
+}
+.t-mb-16 {
+    margin-bottom: 16px;
 }
 .t-mb-30 {
     margin-bottom: 30px;

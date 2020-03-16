@@ -100,6 +100,21 @@
                 ]
             });
         }
+
+        //BLog Slider
+        var blogSlide = $(".st-blog__img-slider");
+        if (blogSlide.length) {
+            blogSlide.slick({
+                mobileFirst: true,
+                slidesToShow: 1,
+                slideToScroll: 1,
+                fade: true,
+                prevArrow:
+                    '<i class="fas fa-arrow-left blog-arrow blog-arrow-prev"></i>',
+                nextArrow:
+                    '<i class="fas fa-arrow-right blog-arrow blog-arrow-next"></i>'
+            });
+        }
         //Hero Image Animation
         var hoverLayer = $(".st-hero-bg");
 
@@ -208,15 +223,14 @@ $(window).on("scroll", function() {
     }
 });
 
-
 // Parallax Plugin initialization
 window.onload = function() {
-	lax.setup() // init
+    lax.setup(); // init
 
-	const updateLax = () => {
-		lax.update(window.scrollY)
-		window.requestAnimationFrame(updateLax)
-	}
+    const updateLax = () => {
+        lax.update(window.scrollY);
+        window.requestAnimationFrame(updateLax);
+    };
 
-	window.requestAnimationFrame(updateLax)
-}
+    window.requestAnimationFrame(updateLax);
+};

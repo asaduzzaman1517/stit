@@ -1,0 +1,32 @@
+.st-recent-post {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &__item {
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        @include sm-screen {
+            flex-wrap: nowrap;
+        }
+    }
+    &__img {
+        width: 80px;
+        max-width: 80px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        @include sm-screen {
+            margin-bottom: 0;
+        }
+    }
+    &__content {
+        a {
+            color: $heading-text;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
