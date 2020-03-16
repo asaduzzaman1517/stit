@@ -1,0 +1,26 @@
+.st-related-post {
+    transition: all .3s ease;
+    &:hover {
+        box-shadow: 0 5px 15px rgba($black, .1);
+    }
+    &__body {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all .3s ease;
+        
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &__link {
+        color: $heading-text;
+        transition: all .3s ease;
+        &:hover {
+            text-decoration: none;
+            color: $secondary;
+        }
+    }
+}

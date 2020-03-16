@@ -1,0 +1,40 @@
+.st-comments {
+    display: flex;
+    &__author {
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+        overflow: hidden;
+        &-img {
+            border-radius: 50%;
+        }
+    }
+    &__info {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__title {
+        text-transform: capitalize;
+        &-link {
+            color: $heading-text;
+            &:hover {
+                text-decoration: none;
+                color: $heading-text;
+            }
+        }
+    }
+    &__children {
+        list-style: none;
+    }
+    
+
+}
+.comment-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

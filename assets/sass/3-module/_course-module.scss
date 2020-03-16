@@ -1,0 +1,20 @@
+.st-course-module {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &__list {
+        &::before {
+            content: '\f00c';
+            font-family: $icon;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+    }
+    &__link {
+        color: $heading-text;
+        &:hover {
+            color: $heading-text;
+            text-decoration: none;
+        }
+    }
+}
