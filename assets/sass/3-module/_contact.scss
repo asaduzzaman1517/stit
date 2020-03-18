@@ -1,0 +1,70 @@
+.st-contact {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    @include md-screen {
+        padding-bottom: 60px;
+    }
+    &__form {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: $white;
+        @include md-screen {
+            padding-left: 30px;
+            padding-right: 30px;
+            box-shadow: 0 8px 15px rgba($black, .1);
+        }
+    }
+    &__bg {
+        position: absolute;
+        @include lg-screen {
+            top: 200px;
+            left: -180px;
+        }
+        @include xl-screen {
+            left: -140px;
+        }
+        @include xli-screen {
+            left: -55px;
+        }
+        @include xliv-screen {
+            left: 16px;
+        }
+        @include xxl-screen {
+            left: 120px;
+        }
+    }
+    &__bg-1 {
+        position: absolute;
+        @include lg-screen {
+            top: 200px;
+            left: -190px;
+        }
+        @include xl-screen {
+            left: -80px;
+        }
+        @include xli-screen {
+            left: -24px;
+        }
+        @include xli-screen {
+            left: 55px;
+        }
+        @include xxl-screen {
+            left: 180px;
+            animation: animateX 10s linear infinite;
+        }
+    }
+}
+
+@keyframes animateX {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
