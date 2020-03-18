@@ -13793,6 +13793,8 @@ body {
   background-color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  scrollbar-width: thin;
+  scrollbar-color: #ff68c2;
   font-weight: 400;
   line-height: 1.45;
   color: #121053; }
@@ -13852,6 +13854,19 @@ button:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
+
+body::-webkit-scrollbar {
+  width: 8px; }
+
+body::-webkit-scrollbar-track {
+  background: #efeff9; }
+
+body::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48d0c), to(#ff6550));
+  background: -webkit-linear-gradient(#f48d0c, #ff6550);
+  background: linear-gradient(#f48d0c, #ff6550);
+  border-radius: 5px;
+  border: none; }
 
 /*---------------------------------------
     1.5 Gutenberg

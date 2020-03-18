@@ -14,6 +14,8 @@ body {
     background-color: white;
     font-family: $body-font;
     font-size: 1.6rem;
+    scrollbar-width: thin;
+    scrollbar-color: $primary;
     @include lg-screen {
         font-size: 1.333rem;
     }
@@ -66,7 +68,6 @@ h6 {
     font-weight: 700;
 }
 
-
 small,
 .sm-text {
     font-size: 14px;
@@ -83,4 +84,15 @@ button {
 .btn.focus {
     outline: none;
     box-shadow: none;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background: $light-bg;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient($secondary, $border);
+    border-radius: 5px;
+    border: none;
 }
