@@ -15966,6 +15966,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     @media screen and (min-width: 1920px) {
       .st-banner__title-blog::after {
         content: "Blog";
+        width: 700px;
         position: absolute;
         top: -19px;
         left: 50%;
@@ -15980,6 +15981,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     @media screen and (min-width: 1920px) {
       .st-banner__title-blog-details::after {
         content: "Details";
+        width: 700px;
         position: absolute;
         top: -19px;
         left: 50%;
@@ -15994,6 +15996,22 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     @media screen and (min-width: 1920px) {
       .st-banner__title-contact::after {
         content: "Contact";
+        width: 700px;
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-size: 80px;
+        z-index: -1; } }
+    @media screen and (min-width: 1920px) {
+      .st-banner__title-course::after {
+        content: "Details";
+        width: 700px;
         position: absolute;
         top: -19px;
         left: 50%;
@@ -16539,6 +16557,84 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .st-support {
   position: relative;
   overflow: hidden; }
+
+/*---------------------------------------
+    3.42 Course Table
+-----------------------------------------*/
+.st-course-table thead {
+  background: #a4d3ff; }
+
+.st-course-table td {
+  color: #121053; }
+
+.st-course-table th {
+  color: #121053; }
+
+/*---------------------------------------
+    3.43 Course info
+-----------------------------------------*/
+.st-course-info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .st-course-info .list-group-item {
+    display: inline-block;
+    background-color: #efeff9;
+    border: 1px solid #e8e8f6; }
+  .st-course-info .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .st-course-info .list-group-item:last-child {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .st-course-info .list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #f6f6fc; }
+
+/*---------------------------------------
+    3.44 Iconik
+-----------------------------------------*/
+.iconik {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .iconik__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 3px;
+    color: #fff; }
+    .iconik__icon--1 {
+      background-image: -webkit-linear-gradient(129deg, #165ffd, #36e5f5);
+      background-image: -o-linear-gradient(129deg, #165ffd, #36e5f5);
+      background-image: linear-gradient(-39deg, #165ffd, #36e5f5); }
+    .iconik__icon--2 {
+      background-image: -webkit-linear-gradient(129deg, #ec36dd, #d4a6fc);
+      background-image: -o-linear-gradient(129deg, #ec36dd, #d4a6fc);
+      background-image: linear-gradient(-39deg, #ec36dd, #d4a6fc); }
+    .iconik__icon--3 {
+      background-image: -webkit-linear-gradient(129deg, #00c4bb, #00dc3f);
+      background-image: -o-linear-gradient(129deg, #00c4bb, #00dc3f);
+      background-image: linear-gradient(-39deg, #00c4bb, #00dc3f); }
+  .iconik__title {
+    text-transform: capitalize;
+    color: #121053;
+    font-weight: 700; }
 
 /*---------------------------------------
     0.4 Theme Style

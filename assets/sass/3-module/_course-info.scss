@@ -1,0 +1,22 @@
+.st-course-info {
+    flex-direction: row;
+    .list-group-item {
+        display: inline-block;
+        background-color: $light-bg;
+        border: 1px solid darken($light-bg, 2%);
+    }
+    .list-group-item:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .list-group-item:last-child {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .list-group-item.active {
+        z-index: 2;
+        color: #fff;
+        background-color: lighten($light-bg, 2%);
+    }
+}

@@ -16,6 +16,7 @@
             @include xxl-screen {
                 &::after {
                     content: "Blog";
+                    width: 700px;
                     position: absolute;
                     top: -19px;
                     left: 50%;
@@ -32,6 +33,7 @@
             @include xxl-screen {
                 &::after {
                     content: "Details";
+                    width: 700px;
                     position: absolute;
                     top: -19px;
                     left: 50%;
@@ -48,6 +50,24 @@
             @include xxl-screen {
                 &::after {
                     content: "Contact";
+                    width: 700px;
+                    position: absolute;
+                    top: -19px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    -webkit-text-stroke: 1px rgba($secondary, 0.2);
+                    -webkit-text-fill-color: transparent;
+                    font-family: $heading-font;
+                    font-size: 80px;
+                    z-index: -1;
+                }
+            }
+        }
+        &-course {
+            @include xxl-screen {
+                &::after {
+                    content: "Details";
+                    width: 700px;
                     position: absolute;
                     top: -19px;
                     left: 50%;
