@@ -1,0 +1,21 @@
+.st-tuts {
+    display: flex;
+    align-items: center;
+    &__info {
+        margin-right: 16px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    &__details {
+        text-transform: capitalize;
+    }
+    &-feature {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

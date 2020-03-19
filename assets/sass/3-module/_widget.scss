@@ -10,4 +10,9 @@
         line-height: 1;
         text-transform: capitalize;
     }
+    &--light {
+        background: $white;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

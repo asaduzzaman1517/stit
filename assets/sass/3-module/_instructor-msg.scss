@@ -1,0 +1,42 @@
+.instructor-msg {
+    &__text {
+        margin-bottom: 40px;
+        background: $custom-40;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+        &::after {
+            content: "\e91b";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-family: "icomoon";
+            font-size: 46px;
+            line-height: 1;
+            color: rgba($heading-text, 0.1);
+        }
+        &::before {
+            content: "";
+            border-left: 0px solid transparent;
+            border-right: 43px solid transparent;
+            border-top: 34px solid $custom-40;
+            position: absolute;
+            bottom: -34px;
+            left: 107px;
+            @include sm-screen {
+                left: 200px;
+            }
+            @include md-screen {
+                left: 280px;
+            }
+            @include lg-screen {
+                left: 80px;
+            }
+            @include xl-screen {
+                left: 110px;
+            }
+        }
+    }
+}

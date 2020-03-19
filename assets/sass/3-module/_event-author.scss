@@ -8,6 +8,8 @@
         min-width: 75px;
         height: 75px;
         margin-right: 16px;
+        border-radius: 50%;
+        overflow: hidden;
     }
     &__info {
         color: $heading-text;

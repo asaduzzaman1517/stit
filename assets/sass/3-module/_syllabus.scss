@@ -1,0 +1,65 @@
+.st-syllabus {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        &:nth-child(even) {
+            background: $light-bg;
+        }
+    }
+    &__link {
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $heading-text;
+        transition: all .3s ease;
+        &:hover {
+            color: $heading-text;
+            text-decoration: none;
+        }
+    }
+    &__icon {
+        margin-right: 15px;
+    }
+    &__title {
+        width: 100%;
+        position: relative;
+        text-align: left;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: $heading-text;
+        @include md-screen {
+            font-size: 18px;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $heading-text;
+        }
+        &:focus {
+            text-decoration: none;
+        }
+        &[aria-expanded="true"]::after {
+            content: '\f068';
+            font-family: $icon;
+            font-weight: 700;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+        &[aria-expanded="false"]::after {
+            content: '\f067';
+            font-family: $icon;
+            font-weight: 700;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+    }
+}
