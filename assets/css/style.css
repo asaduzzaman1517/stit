@@ -13790,6 +13790,7 @@ html {
       font-size: 16px; } }
 
 body {
+  position: relative;
   background-color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -16825,6 +16826,24 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     @media screen and (min-width: 1200px) {
       .instructor-msg__text::before {
         left: 110px; } }
+
+/*---------------------------------------
+    3.50 Course Details
+-----------------------------------------*/
+.st-course-details {
+  position: relative;
+  overflow: hidden; }
+  .st-course-details__parallax {
+    position: absolute;
+    top: 200px;
+    right: 220px; }
+    .st-course-details__parallax-2 {
+      position: absolute;
+      top: 50%;
+      left: 220px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
 
 /*---------------------------------------
     0.4 Theme Style
