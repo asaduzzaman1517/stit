@@ -97,3 +97,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     border: none;
 }
+input:focus {
+    outline: none;
+}

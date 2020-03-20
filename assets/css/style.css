@@ -13869,6 +13869,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
   border: none; }
 
+input:focus {
+  outline: none; }
+
 /*---------------------------------------
     1.5 Gutenberg
 -----------------------------------------*/
@@ -16063,6 +16066,21 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         font-family: "Poppins", sans-serif;
         font-size: 80px;
         z-index: -1; } }
+    @media screen and (min-width: 1920px) {
+      .st-banner__title-admission::after {
+        content: "Get Admit";
+        width: 700px;
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-size: 80px;
+        z-index: -1; } }
   .st-banner__content {
     padding-top: 60px;
     padding-bottom: 200px; }
@@ -16899,6 +16917,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .st-navigation__list:hover {
+    cursor: pointer; }
 
 /*---------------------------------------
     3.52 Gallery Filter
@@ -16917,6 +16937,82 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     top: 50px;
     right: 150px; }
 
+/*---------------------------------------
+    3.54 Input
+-----------------------------------------*/
+.st-input {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid transparent;
+  background: #f5fafe;
+  color: rgba(18, 16, 83, 0.75); }
+  .st-input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 1;
+    color: rgba(18, 16, 83, 0.5);
+    text-transform: capitalize; }
+  .st-input:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1;
+    color: rgba(18, 16, 83, 0.5);
+    text-transform: capitalize; }
+  .st-input::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1;
+    color: rgba(18, 16, 83, 0.5);
+    text-transform: capitalize; }
+  .st-input::placeholder {
+    font-size: 14px;
+    line-height: 1;
+    color: rgba(18, 16, 83, 0.5);
+    text-transform: capitalize; }
+  .st-input:focus {
+    outline: none; }
+  .st-input__radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .st-input--alt {
+    -webkit-box-shadow: inset 0 3px 5px 20px rgba(177, 219, 255, 0.1);
+    box-shadow: inset 0 3px 5px 20px rgba(177, 219, 255, 0.1);
+    border: none !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#b1dbff)) !important;
+    background: -webkit-linear-gradient(#fff, #b1dbff) !important;
+    background: -o-linear-gradient(#fff, #b1dbff) !important;
+    background: linear-gradient(#fff, #b1dbff) !important; }
+
+/*---------------------------------------
+    3.55 Admission
+-----------------------------------------*/
+.st-admission {
+  position: relative;
+  overflow: hidden; }
+  .st-admission__table thead tr th {
+    font-size: 18px !important; }
+  .st-admission__table.table-bordered th {
+    border: 1px solid #d2e8ff;
+    text-align: center;
+    color: #121053;
+    font-size: 16px; }
+  .st-admission__table.table-bordered td {
+    border: 1px solid #d2e8ff;
+    text-align: center;
+    color: #121053; }
+
+/*---------------------------------------
+    3.56 Upload
+-----------------------------------------*/
 /*---------------------------------------
     0.4 Theme Style
 -----------------------------------------*/
