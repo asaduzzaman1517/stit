@@ -207,6 +207,23 @@
                 2000
             );
         });
+
+        //Gallery Filter
+        var filterizd = $(".filtr-container");
+        if (filterizd.length) {
+            filterizd.filterizr({
+                //options object
+                layout: "sameWidth",
+                gutterPixels: 20
+            });
+        }
+
+        $(".st-g-filter__link").on("click", function() {
+            $(this).removeAttr("href");
+        });
+        $(".st-g-filter .st-g-filter__item").on("click", function() {
+            $(this).toggleClass("active").siblings().removeClass("active");
+        });
     });
 })(jQuery);
 

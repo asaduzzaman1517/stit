@@ -62,6 +62,16 @@
             text-transform: capitalize;
             color: $secondary;
         }
+        &--default {
+            text-transform: capitalize;
+            color: $heading-text;
+            &.active {
+                color: $secondary;
+            }
+            &:hover {
+                color: $secondary;
+            }
+        }
     }
     &-icon {
         margin-left: 5px;

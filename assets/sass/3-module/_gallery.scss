@@ -1,0 +1,9 @@
+.st-gallery {
+    position: relative;
+    overflow: hidden;
+    &__parallax {
+        position: absolute;
+        top: 50px;
+        right: 150px;
+    }
+}

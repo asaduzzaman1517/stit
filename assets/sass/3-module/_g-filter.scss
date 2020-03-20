@@ -1,0 +1,9 @@
+.st-g-filter {
+    &__item {
+        &.active {
+            a {
+                color: $secondary;
+            }
+        }
+    }
+}

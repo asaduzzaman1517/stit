@@ -1,4 +1,10 @@
 //Spacer right
+.t-mr-16-md-40 {
+    margin-right: 16px;
+    @include md-screen {
+        margin-right: 40px;
+    }
+}
 
 //Spacer Bottom
 //Spacer Top
