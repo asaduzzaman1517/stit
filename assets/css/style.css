@@ -15867,7 +15867,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     3.26 Newsletter
 -----------------------------------------*/
 .st-newsletter__input {
-  width: 70%;
+  width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 12px;
@@ -16036,6 +16036,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         font-family: "Poppins", sans-serif;
         font-size: 80px;
         z-index: -1; } }
+    .st-banner__title-about::after {
+      content: "About Us";
+      width: 700px;
+      position: absolute;
+      top: -19px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+      -webkit-text-fill-color: transparent;
+      font-family: "Poppins", sans-serif;
+      font-size: 80px;
+      z-index: -1; }
     @media screen and (min-width: 1920px) {
       .st-banner__title-about::after {
         content: "About Us";
@@ -16069,6 +16083,51 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     @media screen and (min-width: 1920px) {
       .st-banner__title-admission::after {
         content: "Get Admit";
+        width: 700px;
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-size: 80px;
+        z-index: -1; } }
+    @media screen and (min-width: 1920px) {
+      .st-banner__title-story::after {
+        content: "Story";
+        width: 700px;
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-size: 80px;
+        z-index: -1; } }
+    @media screen and (min-width: 1920px) {
+      .st-banner__title-workshop::after {
+        content: "Workshop";
+        width: 700px;
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-size: 80px;
+        z-index: -1; } }
+    @media screen and (min-width: 1920px) {
+      .st-banner__title-advance-wp::after {
+        content: "WordPress Deveopment";
         width: 700px;
         position: absolute;
         top: -19px;
@@ -16287,6 +16346,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     background: #fff;
     padding-left: 0;
     padding-right: 0; }
+  .st-widget__video {
+    position: relative; }
 
 /*---------------------------------------
     3.33 Recent Post
@@ -17067,6 +17128,72 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       background-position: center; }
 
 /*---------------------------------------
+    3.57 Clock
+-----------------------------------------*/
+#clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  background: #100e43;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  margin-top: 60px; }
+  @media screen and (min-width: 992px) {
+    #clockdiv {
+      width: auto;
+      margin-top: 0;
+      position: absolute;
+      left: 50px;
+      right: 50px;
+      top: 100%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); } }
+  @media screen and (min-width: 1200px) {
+    #clockdiv {
+      left: 100px;
+      right: 100px; } }
+
+#clockdiv > div {
+  padding: 10px;
+  background: #100e43;
+  display: block; }
+  @media screen and (min-width: 992px) {
+    #clockdiv > div {
+      display: inline-block; } }
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #060519;
+  display: inline-block;
+  width: 100%; }
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px; }
+
+/*---------------------------------------
+    3.58 Event
+-----------------------------------------*/
+.st-event {
+  position: relative;
+  overflow: hidden; }
+  .st-event__img {
+    position: relative; }
+  .st-event__content {
+    padding-top: 60px; }
+    @media screen and (min-width: 992px) {
+      .st-event__content {
+        padding-top: 150px; } }
+
+/*---------------------------------------
     0.4 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -17084,6 +17211,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /*---------------------------------------
     4.3 Margin
 -----------------------------------------*/
+.t-mt-15 {
+  margin-top: 15px; }
+
 .t-mt-18 {
   margin-top: 18px; }
 

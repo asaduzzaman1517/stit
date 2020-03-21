@@ -1,0 +1,13 @@
+.st-event {
+    position: relative;
+    overflow: hidden;
+    &__img {
+        position: relative;
+    }
+    &__content {
+        padding-top: 60px;
+        @include lg-screen {
+            padding-top: 150px;
+        }
+    }
+}
