@@ -17194,6 +17194,25 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         padding-top: 150px; } }
 
 /*---------------------------------------
+    3.59 Video Slider
+-----------------------------------------*/
+.st-video-slider .serv-arrow {
+  position: absolute;
+  bottom: -60px;
+  padding: 14px;
+  border: 1px solid #121053;
+  border-radius: 3px; }
+  .st-video-slider .serv-arrow:hover {
+    border: 1px transparent;
+    background-color: #f48d0c;
+    color: #fff;
+    cursor: pointer; }
+  .st-video-slider .serv-arrow-next {
+    left: 50%; }
+  .st-video-slider .serv-arrow-prev {
+    left: calc(50% - 50px); }
+
+/*---------------------------------------
     0.4 Theme Style
 -----------------------------------------*/
 /*---------------------------------------

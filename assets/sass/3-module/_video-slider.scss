@@ -1,0 +1,22 @@
+.st-video-slider {
+    //slider arrow style
+    .serv-arrow {
+        position: absolute;
+        bottom: -60px;
+        padding: 14px;
+        border: 1px solid $heading-text;
+        border-radius: 3px;
+        &:hover {
+            border: 1px transparent;
+            background-color: $secondary;
+            color: $white;
+            cursor: pointer;
+        }
+        &-next {
+            left: 50%;
+        }
+        &-prev {
+            left: calc(50% - 50px);
+        }
+    }
+}

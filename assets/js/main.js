@@ -246,6 +246,17 @@
         $("#imageUpload").change(function() {
             readURL(this);
         });
+
+        //Video Slider
+        var videoSlider = $('.st-video-slider');
+        if(videoSlider.length) {
+            videoSlider.slick({
+                prevArrow:
+                    '<i class="fas fa-arrow-left serv-arrow serv-arrow-prev"></i>',
+                nextArrow:
+                    '<i class="fas fa-arrow-right serv-arrow serv-arrow-next"></i>'
+            });
+        }
     });
 })(jQuery);
 
