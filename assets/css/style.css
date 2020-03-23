@@ -14122,7 +14122,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     3.1 Header
 -----------------------------------------*/
 .st_header {
-  min-height: 812px;
+  min-height: 1080px;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -14130,7 +14130,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     .st_header {
       min-height: auto; } }
   .st_header__bg {
@@ -17297,5 +17297,3 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-top-hero {
   margin-top: 150px; }
-
-/*# sourceMappingURL=style.css.map */
