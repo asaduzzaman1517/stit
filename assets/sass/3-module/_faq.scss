@@ -1,0 +1,33 @@
+.st-faq {
+    position: relative;
+    overflow: hidden;
+    &__list {
+        &-group {
+            flex-direction: row;
+            align-items: center;
+            &-item {
+                text-align: center;
+                border: none;
+                background: $custom-43;
+                color: $heading-text;
+                font-weight: 500;
+                transition: all .3s ease;
+                &:first-child {
+                    border-radius: 0;
+                }
+                &:last-child {
+                    border-radius: 0;
+                }
+                &:hover {
+                    color: $white;
+                    background: $secondary;
+                }
+                &.active {
+                    border: none;
+                    background: $secondary;
+                }
+            }
+        }
+    }
+    
+}

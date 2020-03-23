@@ -16140,6 +16140,21 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         font-family: "Poppins", sans-serif;
         font-size: 80px;
         z-index: -1; } }
+    @media screen and (min-width: 1920px) {
+      .st-banner__title-faq::after {
+        content: "FAQ";
+        width: 700px;
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-size: 80px;
+        z-index: -1; } }
   .st-banner__content {
     padding-top: 60px;
     padding-bottom: 200px; }
@@ -16798,7 +16813,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     padding-left: 30px;
     padding-right: 30px; }
     .st-syllabus__list:nth-child(even) {
-      background: #efeff9; }
+      background: #f6f9ff; }
   .st-syllabus__link {
     display: inline-block;
     padding-top: 10px;
@@ -16831,6 +16846,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       content: '\f068';
       font-family: "Font Awesome 5 Free";
       font-weight: 700;
+      color: #f48d0c;
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -16852,13 +16868,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     3.46 Accordion
 -----------------------------------------*/
 .st-accordion.accordion > .card:first-of-type {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid #dde8ff;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
 .st-accordion.accordion > .card:not(:first-of-type):not(:last-of-type) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid #dde8ff;
   border-radius: 0; }
+
+.st-accordion .card {
+  border: 1px solid #dde8ff; }
+
+.st-accordion .card-header {
+  background: #f6f9ff;
+  border-bottom: 1px solid #dde8ff; }
 
 /*---------------------------------------
     3.47 Tuts
@@ -17211,6 +17234,40 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     left: 50%; }
   .st-video-slider .serv-arrow-prev {
     left: calc(50% - 50px); }
+
+/*---------------------------------------
+    3.60 FAQ
+-----------------------------------------*/
+.st-faq {
+  position: relative;
+  overflow: hidden; }
+  .st-faq__list-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .st-faq__list-group-item {
+      text-align: center;
+      border: none;
+      background: #f6f9ff;
+      color: #121053;
+      font-weight: 500;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+      .st-faq__list-group-item:first-child {
+        border-radius: 0; }
+      .st-faq__list-group-item:last-child {
+        border-radius: 0; }
+      .st-faq__list-group-item:hover {
+        color: #fff;
+        background: #f48d0c; }
+      .st-faq__list-group-item.active {
+        border: none;
+        background: #f48d0c; }
 
 /*---------------------------------------
     0.4 Theme Style

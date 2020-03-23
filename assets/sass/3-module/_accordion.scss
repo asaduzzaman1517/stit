@@ -1,11 +1,18 @@
 .st-accordion {
     &.accordion > .card:first-of-type {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        border-bottom: 1px solid darken($custom-43, 5%);
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
     &.accordion > .card:not(:first-of-type):not(:last-of-type) {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        border-bottom: 1px solid darken($custom-43, 5%);
         border-radius: 0;
+    }
+    .card {
+        border: 1px solid darken($custom-43, 5%);
+    }
+    .card-header {
+        background: $custom-43;
+        border-bottom: 1px solid darken($custom-43, 5%);
     }
 }

@@ -9,7 +9,7 @@
         padding-left: 30px;
         padding-right: 30px;
         &:nth-child(even) {
-            background: $light-bg;
+            background: $custom-43;
         }
     }
     &__link {
@@ -47,6 +47,7 @@
             content: '\f068';
             font-family: $icon;
             font-weight: 700;
+            color: $secondary;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
