@@ -1,0 +1,33 @@
+.st-card {
+    position: relative;
+    transition: all .3s ease;
+    &:hover {
+        box-shadow: 10px 10px 20px 0 rgba($black, 0.05);
+        transform: translateY(-2px);
+    }
+    &__link {
+        color: $heading-text;
+        &:hover {
+            color: $heading-text;
+            text-decoration: none;
+        }
+    }
+    &__title {
+        margin-top: 0;
+    }
+    &__body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        @include md-screen {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

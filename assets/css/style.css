@@ -16155,6 +16155,21 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         font-family: "Poppins", sans-serif;
         font-size: 80px;
         z-index: -1; } }
+    @media screen and (min-width: 1920px) {
+      .st-banner__title-course-list::after {
+        content: "Course List";
+        width: 700px;
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-size: 80px;
+        z-index: -1; } }
   .st-banner__content {
     padding-top: 60px;
     padding-bottom: 200px; }
@@ -17270,19 +17285,63 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         background: #f48d0c; }
 
 /*---------------------------------------
+    3.61 Card
+-----------------------------------------*/
+.st-card {
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .st-card:hover {
+    -webkit-box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.05);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  .st-card__link {
+    color: #121053; }
+    .st-card__link:hover {
+      color: #121053;
+      text-decoration: none; }
+  .st-card__title {
+    margin-top: 0; }
+  .st-card__body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media screen and (min-width: 768px) {
+      .st-card__body {
+        padding-left: 30px;
+        padding-right: 30px; } }
+  .st-card__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+/*---------------------------------------
     0.4 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
     4.1 Background Color
 -----------------------------------------*/
-.st-text {
-  color: #121053; }
+.t-bg-light {
+  background: #fff !important; }
 
 /*---------------------------------------
     4.2 Text Color
 -----------------------------------------*/
 .t-text-light {
   color: #fff; }
+
+.st-text {
+  color: #121053; }
 
 /*---------------------------------------
     4.3 Margin
