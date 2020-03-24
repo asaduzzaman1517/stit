@@ -1,89 +1,106 @@
 .st-price {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative;
-    transition: all .3s ease;
-    &--regular {
-        background: $custom-43;
-        border: 1px solid darken($custom-43, 8%);
-        border-radius: 5px;
-    }
-    &--popular {
-        
-        background-image: linear-gradient(-39deg, rgba($custom-44, 1), rgba($custom-3, 1));
-        border: 1px solid rgba($custom-2, .01);
-        border-radius: 5px;
-        z-index: 9999;
-        @include md-screen {
-            transform: scale(1.04);
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	position: relative;
+	transition: all 0.3s ease;
+	&--regular {
+		background: $custom-43;
+		border: 1px solid darken($custom-43, 8%);
+		border-radius: 5px;
+	}
+	&--popular {
+		background-image: linear-gradient(
+			-39deg,
+			rgba($custom-44, 1),
+			rgba($custom-3, 1)
+		);
+		border: 1px solid rgba($custom-2, 0.01);
+		border-radius: 5px;
+		z-index: 9999;
+		@include md-screen {
+			transform: scale(1.04);
+		}
+		.st-price__head-title {
+			color: $white;
+		}
+		.st-price__tag-sale {
+			color: $white;
+			&::before {
+				color: $white;
+			}
+		}
+		.st-course-module__link:hover {
+			color: $white;
+		}
+	}
+	&__head {
+		&-title {
+			display: block;
+			font-size: 36px;
+			line-height: 1;
+			font-weight: 700;
+			color: $heading-text;
+			text-transform: capitalize;
+		}
+	}
+	&__tag {
+		&-regular {
+			position: relative;
+			font-size: 24px;
+			line-height: 1;
+			font-weight: 500;
+			color: $text-light;
+			&::before {
+				content: "";
+				width: 100%;
+				height: 2px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background: rgba($secondary, 1);
+			}
+		}
+		&-sale {
+			position: relative;
+			font-size: 48px;
+			line-height: 1;
+			font-weight: 700;
+			&::before {
+				content: "BDT";
+				position: absolute;
+				bottom: 12px;
+				left: 100%;
+				font-size: 12px;
+			}
+		}
+	}
+	&__body {
+		.st-course-module__list {
+			padding-left: 25px;
+		}
+		.st-course-module__list::before {
+			left: 0;
+			color: $secondary;
+			
         }
-        .st-price__head-title {
-            color: $white;
-        }
-        .st-price__tag-sale {
-            color: $white;
-            &::before {
-                color: $white;
-            }
-        }
-        .st-course-module__link:hover {
-            color: $white;
-        }
-    }
-    &__head {
-        &-title {
-            display: block;
-            font-size: 36px;
-            line-height: 1;
-            font-weight: 700;
-            color: $heading-text;
-            text-transform: capitalize;
-        }
-    }
-    &__tag {
-        &-regular {
-            position: relative;
-            font-size: 24px;
-            line-height: 1;
-            font-weight: 500;
-            color: $text-light;
-            &::before {
+        .st-course-module__list--cross {
+            .st-course-module__link::after {
                 content: '';
-                width: 100%;
+                width: 60%;
                 height: 2px;
+                background: $secondary;
                 position: absolute;
                 top: 50%;
-                transform: translateY(-50%);
-                background: rgba($secondary, 1);
+                left: 25px;
             }
-
-        }
-        &-sale {
-            position: relative;
-            font-size: 60px;
-            line-height: 1;
-            font-weight: 700;
             &::before {
-                content: '$';
+                content: "\f00d" !important;
+                font-family: $icon;
+                font-weight: 700;
                 position: absolute;
-                bottom: 10px;
-                left: -15px;
-                font-size: 24px;
-
             }
-
         }
-        
-    }
-    &__body {
-        .st-course-module__list {
-            padding-left: 25px;
-        }
-        .st-course-module__list::before {
-            left: 0;
-            color: $secondary;
-        }
-    }
+	}
 }

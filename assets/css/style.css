@@ -17342,9 +17342,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease; }
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .st-price--regular {
     background: #f6f9ff;
     border: 1px solid #cddeff;
@@ -17383,7 +17383,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-weight: 500;
     color: #bababa; }
     .st-price__tag-regular::before {
-      content: '';
+      content: "";
       width: 100%;
       height: 2px;
       position: absolute;
@@ -17394,20 +17394,33 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       background: #f48d0c; }
   .st-price__tag-sale {
     position: relative;
-    font-size: 60px;
+    font-size: 48px;
     line-height: 1;
     font-weight: 700; }
     .st-price__tag-sale::before {
-      content: '$';
+      content: "BDT";
       position: absolute;
-      bottom: 10px;
-      left: -15px;
-      font-size: 24px; }
+      bottom: 12px;
+      left: 100%;
+      font-size: 12px; }
   .st-price__body .st-course-module__list {
     padding-left: 25px; }
   .st-price__body .st-course-module__list::before {
     left: 0;
     color: #f48d0c; }
+  .st-price__body .st-course-module__list--cross .st-course-module__link::after {
+    content: '';
+    width: 60%;
+    height: 2px;
+    background: #f48d0c;
+    position: absolute;
+    top: 50%;
+    left: 25px; }
+  .st-price__body .st-course-module__list--cross::before {
+    content: "\f00d" !important;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    position: absolute; }
 
 /*---------------------------------------
     0.4 Theme Style
