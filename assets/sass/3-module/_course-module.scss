@@ -5,12 +5,13 @@
     &__list {
         position: relative;
         margin-bottom: 20px;
+        padding-left: 25px;
         &::before {
             content: '\f00c';
             font-family: $icon;
             font-weight: 700;
             position: absolute;
-            left: -24px;
+            left: 0;
         
         }
     }

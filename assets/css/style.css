@@ -16495,13 +16495,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   list-style: none; }
   .st-course-module__list {
     position: relative;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding-left: 25px; }
     .st-course-module__list::before {
       content: '\f00c';
       font-family: "Font Awesome 5 Free";
       font-weight: 700;
       position: absolute;
-      left: -24px; }
+      left: 0; }
   .st-course-module__link {
     color: #121053; }
     .st-course-module__link:hover {
@@ -17333,6 +17334,82 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     justify-content: space-between; }
 
 /*---------------------------------------
+    3.62 Price
+-----------------------------------------*/
+.st-price {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+  .st-price--regular {
+    background: #f6f9ff;
+    border: 1px solid #cddeff;
+    border-radius: 5px; }
+  .st-price--popular {
+    background-image: -webkit-linear-gradient(129deg, #4236f5, #165ffd);
+    background-image: -o-linear-gradient(129deg, #4236f5, #165ffd);
+    background-image: linear-gradient(-39deg, #4236f5, #165ffd);
+    border: 1px solid rgba(54, 229, 245, 0.01);
+    border-radius: 5px;
+    z-index: 9999; }
+    @media screen and (min-width: 768px) {
+      .st-price--popular {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        transform: scale(1.04); } }
+    .st-price--popular .st-price__head-title {
+      color: #fff; }
+    .st-price--popular .st-price__tag-sale {
+      color: #fff; }
+      .st-price--popular .st-price__tag-sale::before {
+        color: #fff; }
+    .st-price--popular .st-course-module__link:hover {
+      color: #fff; }
+  .st-price__head-title {
+    display: block;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    color: #121053;
+    text-transform: capitalize; }
+  .st-price__tag-regular {
+    position: relative;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 500;
+    color: #bababa; }
+    .st-price__tag-regular::before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background: #f48d0c; }
+  .st-price__tag-sale {
+    position: relative;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 700; }
+    .st-price__tag-sale::before {
+      content: '$';
+      position: absolute;
+      bottom: 10px;
+      left: -15px;
+      font-size: 24px; }
+  .st-price__body .st-course-module__list {
+    padding-left: 25px; }
+  .st-price__body .st-course-module__list::before {
+    left: 0;
+    color: #f48d0c; }
+
+/*---------------------------------------
     0.4 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -17454,3 +17531,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-top-hero {
   margin-top: 150px; }
+
+@media screen and (min-width: 768px) {
+  .t-no-md-guts {
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
+    .t-no-md-guts > .col,
+    .t-no-md-guts > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0; } }
+
+/*# sourceMappingURL=style.css.map */
