@@ -15756,8 +15756,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     3.25 CTA
 -----------------------------------------*/
 .st-cta {
-  position: relative;
-  bottom: -130px; }
+  position: relative; }
   .st-cta__wrapper {
     background: url(../img/cta-bg.png);
     background-size: cover;
@@ -17409,6 +17408,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .t-pt-120 {
   padding-top: 120px; }
 
+.t-pb-30 {
+  padding-bottom: 30px; }
+
 .t-pb-60 {
   padding-bottom: 60px; }
 
@@ -17429,6 +17431,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   @media screen and (min-width: 768px) {
     .t-mr-16-md-40 {
       margin-right: 40px; } }
+
+.t-mb-m-130 {
+  margin-bottom: -130px; }
 
 .t-top-hero {
   margin-top: 150px; }
