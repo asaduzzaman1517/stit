@@ -15869,39 +15869,28 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 12px;
+  padding-left: 22px;
   padding-right: 12px;
   border: none;
   border-radius: 3px 0 0 3px; }
   .st-newsletter__input::-webkit-input-placeholder {
-    padding-left: 10px;
     font-size: 12px;
-    line-height: 1;
     color: #bababa; }
   .st-newsletter__input:-ms-input-placeholder {
-    padding-left: 10px;
     font-size: 12px;
-    line-height: 1;
     color: #bababa; }
   .st-newsletter__input::-ms-input-placeholder {
-    padding-left: 10px;
     font-size: 12px;
-    line-height: 1;
     color: #bababa; }
   .st-newsletter__input::placeholder {
-    padding-left: 10px;
     font-size: 12px;
-    line-height: 1;
     color: #bababa; }
   .st-newsletter__input:focus {
     outline: none; }
   .st-newsletter__input-group {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    display: flex; }
 
 .st-newsletter__link {
   display: inline-block;
@@ -16157,6 +16146,21 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     @media screen and (min-width: 1920px) {
       .st-banner__title-course-list::after {
         content: "Course List";
+        width: 700px;
+        position: absolute;
+        top: -19px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-size: 80px;
+        z-index: -1; } }
+    @media screen and (min-width: 1920px) {
+      .st-banner__title-service::after {
+        content: "Service Details";
         width: 700px;
         position: absolute;
         top: -19px;
@@ -17333,6 +17337,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .t-bg-light {
   background: #fff !important; }
 
+.t-bg-input {
+  background: #f6f9ff; }
+
 /*---------------------------------------
     4.2 Text Color
 -----------------------------------------*/
@@ -17341,6 +17348,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .st-text {
   color: #121053; }
+
+.t-link {
+  color: #121053; }
+  .t-link:hover {
+    color: #121053;
+    text-decoration: none; }
 
 /*---------------------------------------
     4.3 Margin

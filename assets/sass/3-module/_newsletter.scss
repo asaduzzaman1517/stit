@@ -3,14 +3,12 @@
         width: 100%;
         padding-top: 12px;
         padding-bottom: 12px;
-        padding-left: 12px;
+        padding-left: 22px;
         padding-right: 12px;
         border: none;
         border-radius: 3px 0 0 3px;
         &::placeholder {
-            padding-left: 10px;
             font-size: 12px;
-            line-height: 1;
             color: $text-light;
         }
         &:focus {
@@ -18,7 +16,6 @@
         }
         &-group {
             display: flex;
-            align-items: center;
         }
     }
     &__link {

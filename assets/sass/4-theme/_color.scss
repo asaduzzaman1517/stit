@@ -5,3 +5,10 @@
 .st-text {
     color: $heading-text;
 }
+.t-link {
+    color: $heading-text;
+    &:hover {
+        color: $heading-text;
+        text-decoration: none;
+    }
+}
