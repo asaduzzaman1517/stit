@@ -16493,11 +16493,15 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding: 0;
   margin: 0;
   list-style: none; }
-  .st-course-module__list::before {
-    content: '\f00c';
-    font-family: "Font Awesome 5 Free";
-    font-weight: 700;
-    margin-right: 10px; }
+  .st-course-module__list {
+    position: relative;
+    margin-bottom: 20px; }
+    .st-course-module__list::before {
+      content: '\f00c';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      position: absolute;
+      left: -24px; }
   .st-course-module__link {
     color: #121053; }
     .st-course-module__link:hover {
