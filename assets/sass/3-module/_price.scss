@@ -86,15 +86,6 @@
 			
         }
         .st-course-module__list--cross {
-            .st-course-module__link::after {
-                content: '';
-                width: 60%;
-                height: 2px;
-                background: $secondary;
-                position: absolute;
-                top: 50%;
-                left: 25px;
-            }
             &::before {
                 content: "\f00d" !important;
                 font-family: $icon;

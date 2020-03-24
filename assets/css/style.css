@@ -17408,14 +17408,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .st-price__body .st-course-module__list::before {
     left: 0;
     color: #f48d0c; }
-  .st-price__body .st-course-module__list--cross .st-course-module__link::after {
-    content: '';
-    width: 60%;
-    height: 2px;
-    background: #f48d0c;
-    position: absolute;
-    top: 50%;
-    left: 25px; }
   .st-price__body .st-course-module__list--cross::before {
     content: "\f00d" !important;
     font-family: "Font Awesome 5 Free";
