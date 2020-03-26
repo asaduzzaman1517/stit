@@ -1,0 +1,21 @@
+.st-author {
+    // display: flex;
+    // align-items: center;
+    background: $light-bg;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    &__img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        @include sm-screen {
+            margin-bottom: 0;
+        }
+    }
+}
