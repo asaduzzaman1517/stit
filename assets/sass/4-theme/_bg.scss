@@ -6,3 +6,6 @@
 .t-bg-input {
     background: $custom-43;
 }
+.t-bg-primary {
+    background: lighten($heading-text, 8%);
+}

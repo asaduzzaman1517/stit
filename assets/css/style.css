@@ -17345,6 +17345,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+  .st-price:hover {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
   .st-price--regular {
     background: #f6f9ff;
     border: 1px solid #cddeff;
@@ -17361,6 +17367,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         -webkit-transform: scale(1.04);
         -ms-transform: scale(1.04);
         transform: scale(1.04); } }
+    .st-price--popular:hover {
+      -webkit-transform: translateY(-2px) scale(1.04);
+      -ms-transform: translateY(-2px) scale(1.04);
+      transform: translateY(-2px) scale(1.04);
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
     .st-price--popular .st-price__head-title {
       color: #fff; }
     .st-price--popular .st-price__tag-sale {
@@ -17376,6 +17388,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-weight: 700;
     color: #121053;
     text-transform: capitalize; }
+    @media screen and (min-width: 1200px) {
+      .st-price__head-title {
+        font-size: 18px; } }
+    @media screen and (min-width: 1600px) {
+      .st-price__head-title {
+        font-size: 36px; } }
   .st-price__tag-regular {
     position: relative;
     font-size: 24px;
@@ -17397,6 +17415,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-size: 48px;
     line-height: 1;
     font-weight: 700; }
+    @media screen and (min-width: 1200px) {
+      .st-price__tag-sale {
+        font-size: 36px; } }
+    @media screen and (min-width: 1600px) {
+      .st-price__tag-sale {
+        font-size: 48px; } }
     .st-price__tag-sale::before {
       content: "BDT";
       position: absolute;
@@ -17415,6 +17439,17 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     position: absolute; }
 
 /*---------------------------------------
+    3.63 404
+-----------------------------------------*/
+.st-404 {
+  height: 60vh;
+  width: 100%;
+  background-image: url(../img/404.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+/*---------------------------------------
     0.4 Theme Style
 -----------------------------------------*/
 /*---------------------------------------
@@ -17425,6 +17460,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-bg-input {
   background: #f6f9ff; }
+
+.t-bg-primary {
+  background: #191775; }
 
 /*---------------------------------------
     4.2 Text Color
