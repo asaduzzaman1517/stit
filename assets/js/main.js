@@ -3,6 +3,13 @@
 
 	$(document).ready(function() {
 		/*----------------------
+            Gallery Pop
+		-----------------------*/
+		let galleryImg = $('.st-gallery__item');
+		if(galleryImg.length) {
+			galleryImg.featherlightGallery();
+		}
+		/*----------------------
             Search Popup
         -----------------------*/
         var bodyOvrelay = $("#body-overlay");
