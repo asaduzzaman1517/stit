@@ -14436,6 +14436,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         padding-top: 20px; }
       .menu-item-has-children .sub-menu li:last-child {
         padding-bottom: 20px; }
+  .menu-item-has-children:hover > a {
+    color: #f48d0c; }
   .menu-item-has-children:hover > .sub-menu {
     height: 300px;
     overflow: hidden;
@@ -14469,7 +14471,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     height: auto;
     visibility: visible;
     opacity: 1;
-    z-index: 1; }
+    z-index: 9999; }
   .menu-item-has-children::after {
     content: "\f107";
     position: absolute;

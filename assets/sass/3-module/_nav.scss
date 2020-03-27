@@ -105,6 +105,9 @@
             }
         }
     }
+    &:hover > a {
+        color: $secondary;
+    }
     &:hover {
         > .sub-menu {
             height: 300px;
@@ -135,11 +138,12 @@
             }
         }
     }
+    
     li:hover > .sub-menu {
         height: auto;
         visibility: visible;
         opacity: 1;
-        z-index: 1;
+        z-index: 9999;
     }
     &::after {
         content: "\f107";
