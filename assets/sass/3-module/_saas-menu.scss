@@ -4,22 +4,26 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 36px;
-        min-width: 36px;
-        height: 36px;
-        border-radius: 36px;
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 40px;
         color: $white;
         &-1 {
             background-image: linear-gradient(-39deg, $custom-3, $custom-2);
+            box-shadow: 0 5px 10px rgba($custom-3, .4);
         }
         &-2 {
             background-image: linear-gradient(-39deg, $custom-6, $custom-5);
+            box-shadow: 0 5px 10px rgba($custom-6, .4);
         }
         &-3 {
             background-image: linear-gradient(-39deg, $custom-8, $custom-9);
+            box-shadow: 0 5px 10px rgba($custom-9, .4);
         }
         &-4 {
             background-image: linear-gradient(-39deg, $custom-24, $custom-23);
+            box-shadow: 0 5px 10px rgba($custom-24, .4);
         }
     }
     &__product {
@@ -27,15 +31,19 @@
         &-name {
             display: block;
             font-weight: 700;
-            color: $heading-text;
+            color: lighten($heading-text, 4%);
             text-transform: capitalize;
+            font-family: $extra-font;
+            font-size: 16px;
+            letter-spacing: .2px;
         }
         &-des {
             display: inline-block;
             font-size: 12px;
             font-weight: normal;
-            color: $heading-text;
+            color: $text-icon;
             text-transform: capitalize;
+            letter-spacing: .2px;
             &-new {
                 position: relative;
                 &::after {

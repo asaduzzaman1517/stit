@@ -29,6 +29,19 @@
             </div>
         </div>
         <!-- preloader area end -->
+        <!-- search Popup -->
+        <div class="body-overlay" id="body-overlay"></div>
+        <div class="search-popup" id="search-popup">
+            <form action="index.html" class="search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search....." />
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!--search Popup -->
         <!-- Header Top -->
         <div class="st-header-top">
             <div class="container">
@@ -165,13 +178,23 @@
                                                 <ul
                                                     class="st_nav st_nav--primary t-mb-50"
                                                 >
-                                                    <li>
+                                                    <li >
                                                         <a href="index.html">
                                                             home</a
                                                         >
                                                     </li>
-                                                    <li>
+                                                    <li class="menu-item-has-children">
                                                         <a href="about.html">about us</a>
+                                                        <ul class="st-sub-menu">
+                                                            <li class="st-sub-menu__item">
+                                                                <a href="#" class="st-sub-menu__link">about company</a>
+                                                            </li>
+                                                            <li><a href="#">about trainer</a></li>
+                                                            <li class="st-sub-menu__item">
+                                                                <a href="#" class="st-sub-menu__link">about environment</a>
+                                                            </li>
+                                                            <li><a href="#">about facility</a></li>
+                                                        </ul>
                                                     </li>
                                                     <li
                                                         class="menu-item-has-children current-menu-item"
@@ -345,8 +368,7 @@
                                                                 <span
                                                                     class="st-mega-menu__title"
                                                                 >
-                                                                    Web &
-                                                                    Software
+                                                                    Web & Software
                                                                     Traning
                                                                 </span>
                                                                 <ul
@@ -506,8 +528,7 @@
                                                                     class="st-mega-menu__title"
                                                                 >
                                                                     Digital
-                                                                    Marketing
-                                                                    Taning
+                                                                    Marketing Taning
                                                                 </span>
                                                                 <ul
                                                                     class="st-mega-menu__list"
@@ -628,8 +649,7 @@
                                                                         <button
                                                                             class="st-btn-link st-btn-link--tertiary st-btn st-btn--secondary st-btn-short-round"
                                                                         >
-                                                                            view
-                                                                            all
+                                                                            view all
                                                                             project
                                                                             <span
                                                                                 class="st-btn-icon"
@@ -645,9 +665,7 @@
                                                         </ul>
                                                     </li>
                                                     <li>
-                                                        <a href="admission.html"
-                                                            >admission</a
-                                                        >
+                                                        <a href="admission.html">admission</a>
                                                     </li>
                                                     <li>
                                                         <a href="gallery.html">gallery</a>
@@ -658,9 +676,14 @@
                                                         >
                                                     </li>
                                                     <li>
-                                                        <a href="blog.html"
-                                                            >blog</a
-                                                        >
+                                                        <a href="blog.html">blog</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="st-search">
+                                                                <span class="fas fa-search"></span>
+                                                            </span>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>

@@ -1,0 +1,46 @@
+.st-sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    background: $white;
+    opacity: 0;
+    visibility: none;
+    z-index: -1;
+    transition: all .3s ease;
+    @include lg-screen {
+        position: absolute;
+        width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    li {
+        width: 100%;
+        margin-right: 0;
+        border-bottom: 1px solid darken($white, 4%);
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    a {
+        display: block;
+        width: 100%;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        color: $heading-text !important;
+        transition: all .3s ease;
+        font-family: $extra-font;
+        letter-spacing: .5px;
+        &:hover {
+            text-decoration: none;
+            color: $secondary !important;
+            background: darken($white, 4%);
+        }
+    }
+}

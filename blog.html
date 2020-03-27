@@ -29,6 +29,20 @@
             </div>
         </div>
         <!-- preloader area end -->
+
+        <!-- search Popup -->
+        <div class="body-overlay" id="body-overlay"></div>
+        <div class="search-popup" id="search-popup">
+            <form action="index.html" class="search-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search....." />
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!--search Popup -->
         <!-- Header Top -->
         <div class="st-header-top">
             <div class="container">
@@ -165,13 +179,23 @@
                                                 <ul
                                                     class="st_nav st_nav--primary t-mb-50"
                                                 >
-                                                    <li >
+                                                    <li class="current-menu-item">
                                                         <a href="index.html">
                                                             home</a
                                                         >
                                                     </li>
-                                                    <li>
+                                                    <li class="menu-item-has-children">
                                                         <a href="about.html">about us</a>
+                                                        <ul class="st-sub-menu">
+                                                            <li class="st-sub-menu__item">
+                                                                <a href="#" class="st-sub-menu__link">about company</a>
+                                                            </li>
+                                                            <li><a href="#">about trainer</a></li>
+                                                            <li class="st-sub-menu__item">
+                                                                <a href="#" class="st-sub-menu__link">about environment</a>
+                                                            </li>
+                                                            <li><a href="#">about facility</a></li>
+                                                        </ul>
                                                     </li>
                                                     <li
                                                         class="menu-item-has-children"
@@ -652,8 +676,15 @@
                                                             >contact</a
                                                         >
                                                     </li>
-                                                    <li class="current-menu-item">
+                                                    <li>
                                                         <a href="blog.html">blog</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="st-search">
+                                                                <span class="fas fa-search"></span>
+                                                            </span>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
