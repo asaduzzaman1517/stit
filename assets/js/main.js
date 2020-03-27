@@ -26,7 +26,7 @@
 				slidesToShow: 1,
 				mobileFirst: true,
 				autoplay: true,
-				fade: true,
+				// fade: true,
 				autoplaySpeed: 8000,
 				prevArrow: '<i class="fas fa-angle-left slick-arrow-prev"></i>',
 				nextArrow: '<i class="fas fa-angle-right slick-arrow-next"></i>'
