@@ -1,11 +1,14 @@
 //Course Card
 .st-course-card {
+    width: 100%;
+    height: 100%;
+    display: block;
     padding: 40px 30px;
     border-radius: 5px;
     position: relative;
     transition: all .3s ease;
     &:hover {
-        box-shadow: 10px 10px 20px 0 rgba($black, 0.05);
+        box-shadow: 10px 10px 20px 0 rgba($black, 0.09);
         transform: translateY(-2px);
     }
     &--1 {
