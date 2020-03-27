@@ -3,28 +3,35 @@
 
 	$(document).ready(function() {
 		/*----------------------
+            Counter UP
+		-----------------------*/
+		var countUp = $(".counter");
+		if (countUp.length) {
+			countUp.counterUp();
+		}
+		/*----------------------
             Gallery Pop
 		-----------------------*/
-		let galleryImg = $('.st-gallery__item');
-		if(galleryImg.length) {
+		let galleryImg = $(".st-gallery__item");
+		if (galleryImg.length) {
 			galleryImg.featherlightGallery();
 		}
 		/*----------------------
             Search Popup
         -----------------------*/
-        var bodyOvrelay = $("#body-overlay");
-        var searchPopup = $("#search-popup");
+		var bodyOvrelay = $("#body-overlay");
+		var searchPopup = $("#search-popup");
 
-        $(document).on("click", "#body-overlay", function(e) {
-            e.preventDefault();
-            bodyOvrelay.removeClass("active");
-            searchPopup.removeClass("active");
-        });
-        $(document).on("click", ".st-search", function(e) {
-            e.preventDefault();
-            searchPopup.addClass("active");
-            bodyOvrelay.addClass("active");
-        });
+		$(document).on("click", "#body-overlay", function(e) {
+			e.preventDefault();
+			bodyOvrelay.removeClass("active");
+			searchPopup.removeClass("active");
+		});
+		$(document).on("click", ".st-search", function(e) {
+			e.preventDefault();
+			searchPopup.addClass("active");
+			bodyOvrelay.addClass("active");
+		});
 		/**-----------------------------
 		 *  Navbar fix
 		 * ---------------------------*/
@@ -199,8 +206,8 @@
 		});
 
 		//Video Popup
-		var heroPlay = $('.st-hero-bg__el-three');
-		if(heroPlay.length) {
+		var heroPlay = $(".st-hero-bg__el-three");
+		if (heroPlay.length) {
 			heroPlay.magnificPopup({
 				items: {
 					src: "https://www.youtube.com/watch?v=kshIWIc15yg"
