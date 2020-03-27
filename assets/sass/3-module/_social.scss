@@ -22,9 +22,27 @@
         color: $white;
         font-size: 16px;
         transition: all 0.3s ease;
-        &:hover {
-            color: $secondary;
+        &-fb {
+            &:hover {
+                color: $fb;
+            }
         }
+        &-tw {
+            &:hover {
+                color: $tw;
+            }
+        }
+        &-ins {
+            &:hover {
+                color: $ins;
+            }
+        }
+        &-in {
+            &:hover {
+                color: $in;
+            }
+        }
+
     }
     &--footer {
         .st-social__icon {
@@ -40,10 +58,24 @@
             font-size: 14px;
             line-height: 1;
             transition: all 0.3s ease;
+            &-fb:hover {
+                background: $fb;
+                border: 1px solid $fb;
+            }
+            &-tw:hover {
+                background: $tw;
+                border: 1px solid $tw;
+            }
+            &-ins:hover {
+                background: $ins;
+                border: 1px solid $ins;
+            }
+            &-in:hover {
+                background: $in;
+                border: 1px solid $in;
+            }
             &:hover {
                 color: $white;
-                background: $secondary;
-                border: 1px solid $secondary;
             }
         }
     }

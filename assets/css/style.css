@@ -14614,8 +14614,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    .st-social__icon:hover {
-      color: #f48d0c; }
+    .st-social__icon-fb:hover {
+      color: #3b5998; }
+    .st-social__icon-tw:hover {
+      color: #1da1f2; }
+    .st-social__icon-ins:hover {
+      color: #f56040; }
+    .st-social__icon-in:hover {
+      color: #0077b5; }
   .st-social--footer .st-social__icon {
     width: 34px;
     height: 34px;
@@ -14637,10 +14643,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+    .st-social--footer .st-social__icon-fb:hover {
+      background: #3b5998;
+      border: 1px solid #3b5998; }
+    .st-social--footer .st-social__icon-tw:hover {
+      background: #1da1f2;
+      border: 1px solid #1da1f2; }
+    .st-social--footer .st-social__icon-ins:hover {
+      background: #f56040;
+      border: 1px solid #f56040; }
+    .st-social--footer .st-social__icon-in:hover {
+      background: #0077b5;
+      border: 1px solid #0077b5; }
     .st-social--footer .st-social__icon:hover {
-      color: #fff;
-      background: #f48d0c;
-      border: 1px solid #f48d0c; }
+      color: #fff; }
 
 /*---------------------------------------
     3.9 Button
