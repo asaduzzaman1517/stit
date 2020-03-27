@@ -199,6 +199,30 @@
 		});
 
 		//Video Popup
+		var heroPlay = $('.st-hero-bg__el-three');
+		if(heroPlay.length) {
+			heroPlay.magnificPopup({
+				items: {
+					src: "https://www.youtube.com/watch?v=kshIWIc15yg"
+				},
+				type: "iframe",
+				iframe: {
+					markup:
+						'<div class="mfp-iframe-scaler">' +
+						'<div class="mfp-close"></div>' +
+						'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+						"</div>",
+					patterns: {
+						youtube: {
+							index: "youtube.com/",
+							id: "v=",
+							src: "//www.youtube.com/embed/kshIWIc15yg"
+						}
+					},
+					srcAction: "iframe_src"
+				}
+			});
+		}
 		$(".st-video-play").magnificPopup({
 			items: {
 				src: "https://www.youtube.com/watch?v=kshIWIc15yg"
