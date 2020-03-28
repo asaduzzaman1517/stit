@@ -16064,20 +16064,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         font-family: "Poppins", sans-serif;
         font-size: 80px;
         z-index: -1; } }
-    .st-banner__title-about::after {
-      content: "About Us";
-      width: 700px;
-      position: absolute;
-      top: -19px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      -webkit-text-stroke: 1px rgba(244, 141, 12, 0.2);
-      -webkit-text-fill-color: transparent;
-      font-family: "Poppins", sans-serif;
-      font-size: 80px;
-      z-index: -1; }
     @media screen and (min-width: 1920px) {
       .st-banner__title-about::after {
         content: "About Us";
@@ -17817,6 +17803,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-mt-30 {
   margin-top: 30px; }
+
+.t-mt-40 {
+  margin-top: 40px; }
 
 .t-mt-60 {
   margin-top: 60px; }
