@@ -17,4 +17,13 @@
             color: $heading-text;
         }
     }
+    &__select {
+        .nice-select {
+            border-radius: 0;
+            background-color: $light-bg-4;
+            border: solid 1px $light-bg-4;
+            height: 58px;
+            line-height: 56px;
+        }
+    }
 }

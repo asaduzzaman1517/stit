@@ -3,6 +3,13 @@
 
 	$(document).ready(function() {
 		/*----------------------
+            Nice Select
+		-----------------------*/
+		var select = $('select');
+		if(select.length) {
+			select.niceSelect();
+		}
+		/*----------------------
             Counter UP
 		-----------------------*/
 		var countUp = $(".counter");

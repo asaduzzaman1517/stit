@@ -88,5 +88,11 @@
                 font-size: 14px;
             }
         }
+        .nice-select {
+            border: 1px solid #ced4da !important;
+        }
+        .nice-select:active, .nice-select.open, .nice-select:focus {
+            border-color: $secondary !important;
+        }
     }
 }
