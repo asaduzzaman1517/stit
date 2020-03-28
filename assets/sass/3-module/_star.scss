@@ -4,4 +4,7 @@
     list-style: none;
     display: flex;
     align-items: center;
+    &__ico {
+        color: $secondary;
+    }
 }

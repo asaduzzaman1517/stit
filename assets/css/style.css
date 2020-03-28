@@ -16638,9 +16638,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         margin-bottom: 0; } }
   .st-recent-post__content a {
     color: #121053;
-    font-weight: 500; }
+    font-weight: 500;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
   .st-recent-post__content a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #f48d0c; }
 
 /*---------------------------------------
     3.34 Category
@@ -17176,6 +17180,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .st-star__ico {
+    color: #f48d0c; }
 
 /*---------------------------------------
     3.49 Instructor Message
@@ -17284,31 +17290,32 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   width: 100%;
   font-size: 14px;
   line-height: 1;
-  border: 1px solid transparent;
+  border: 1px solid #deeefc;
   background: #f5fafe;
   color: rgba(18, 16, 83, 0.75); }
   .st-input::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 1;
-    color: rgba(18, 16, 83, 0.5);
+    color: rgba(18, 16, 83, 0.7);
     text-transform: capitalize; }
   .st-input:-ms-input-placeholder {
     font-size: 14px;
     line-height: 1;
-    color: rgba(18, 16, 83, 0.5);
+    color: rgba(18, 16, 83, 0.7);
     text-transform: capitalize; }
   .st-input::-ms-input-placeholder {
     font-size: 14px;
     line-height: 1;
-    color: rgba(18, 16, 83, 0.5);
+    color: rgba(18, 16, 83, 0.7);
     text-transform: capitalize; }
   .st-input::placeholder {
     font-size: 14px;
     line-height: 1;
-    color: rgba(18, 16, 83, 0.5);
+    color: rgba(18, 16, 83, 0.7);
     text-transform: capitalize; }
   .st-input:focus {
-    outline: none; }
+    outline: none;
+    border: 1px solid #c7e3f9; }
   .st-input__radio {
     display: -webkit-box;
     display: -ms-flexbox;

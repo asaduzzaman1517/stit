@@ -24,9 +24,11 @@
         a {
             color: $heading-text;
             font-weight: 500;
+            transition: all .3s ease;
         }
         a:hover {
             text-decoration: none;
+            color: $secondary;
         }
     }
 }
