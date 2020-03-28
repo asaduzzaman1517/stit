@@ -17509,22 +17509,35 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     3.64 Author
 -----------------------------------------*/
 .st-author {
-  background: #efeff9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #fbfbff;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 40px;
   padding-right: 40px; }
+  @media screen and (min-width: 576px) {
+    .st-author {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; } }
   .st-author__img {
     width: 200px;
+    min-width: 200px !important;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    float: left;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-bottom: 30px; }
     @media screen and (min-width: 576px) {
       .st-author__img {
         margin-bottom: 0; } }
+    .st-author__img--sm {
+      width: 80px !important;
+      min-width: 80px !important;
+      height: 80px !important; }
 
 /*---------------------------------------
     3.65 Preloader
@@ -17813,6 +17826,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .t-mb-5 {
   margin-bottom: 5px; }
 
+.t-mb-10 {
+  margin-bottom: 10px; }
+
 .t-mb-15-md-30 {
   margin-bottom: 15px; }
   @media screen and (min-width: 768px) {
@@ -17875,6 +17891,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .t-pb-140 {
   padding-bottom: 140px; }
+
+.t-px-40 {
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.t-py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px; }
 
 /*---------------------------------------
     4.5 Spacer
