@@ -15910,10 +15910,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     3.24 Feed
 -----------------------------------------*/
 .st-feed {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbfbff), to(#fff));
-  background-image: -webkit-linear-gradient(#fbfbff, #fff);
-  background-image: -o-linear-gradient(#fbfbff, #fff);
-  background-image: linear-gradient(#fbfbff, #fff); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7fd), to(#fff));
+  background-image: -webkit-linear-gradient(#f7f7fd, #fff);
+  background-image: -o-linear-gradient(#f7f7fd, #fff);
+  background-image: linear-gradient(#f7f7fd, #fff); }
   .st-feed-nav__item:focus {
     outline: none !important; }
   .st-feed-nav__author {
@@ -16594,7 +16594,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  background: #fbfbff; }
+  background: #f7f7fd; }
   .st-widget__title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -17700,7 +17700,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: #fbfbff;
+  background: #f7f7fd;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 40px;
@@ -17990,6 +17990,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .t-link:hover {
     color: #121053;
     text-decoration: none; }
+
+.t-blur {
+  opacity: .5; }
 
 /*---------------------------------------
     4.3 Margin

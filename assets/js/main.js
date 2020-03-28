@@ -14,7 +14,10 @@
 		-----------------------*/
 		var countUp = $(".counter");
 		if (countUp.length) {
-			countUp.counterUp();
+			countUp.counterUp({
+				delay: 10,
+    			time: 1000
+			});
 		}
 		/*----------------------
             Gallery Pop
